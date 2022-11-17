@@ -1,0 +1,72 @@
+.img {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 430px;
+}
+/* * {
+  font-family: "Exo 2", sans-serif;
+  font-size: large;
+  line-height: 1.5;
+} */
+/* .sidebarcontent.open {
+      width: 210px;
+      background-color: aliceblue;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      z-index: 2;
+    } */
+.back-btn-color {
+  background-color: white !important;
+  color: gray !important;
+  border-color: gray !important;
+}
+.back-btn-color:hover {
+  background-color: gray !important;
+  color: white !important;
+  transform: scale(1.1);
+}
+@media only Screen and (min-width: 768px) {
+  .button-Style {
+    padding: 7px 25px !important;
+  }
+}
+
+.save-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.save-btn-color {
+  background-color: #03c04a !important;
+  border-color: lightgreen !important;
+}
+.save-btn-color:hover {
+  background-color: green !important;
+  transform: scale(1.1);
+}
+.next-btn-color {
+  background-color: #32527b !important;
+}
+.next-btn-color:hover {
+  background-color: #0656be !important;
+  transform: scale(1.1);
+}
+@media only Screen and (max-width: 362px) {
+  .next-btn-color {
+    margin-top: 8px !important;
+  }
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
