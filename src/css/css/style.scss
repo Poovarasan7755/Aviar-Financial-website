@@ -143,7 +143,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 63px;
 }
 
 /*--------------------------------------------------------------
@@ -176,7 +176,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
-  /* color: #fff; */
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -395,7 +395,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background: #37517e;
 }
 
@@ -998,7 +998,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
-  position: absolute;
+  // position: absolute;
   left: 15px;
   bottom: 0;
   z-index: 3;
@@ -1855,6 +1855,6 @@ section {
   }
 }
 
-.ri-check-double-line{
+.ri-check-double-line {
   color: #209dd8;
 }

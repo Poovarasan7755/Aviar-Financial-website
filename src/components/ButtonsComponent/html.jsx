@@ -8,105 +8,14 @@ import { ProgressBar } from "react-bootstrap";
 import { FaFacebookF, FaLinkedin, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { GrCircleQuestion } from "react-icons/gr";
-import { GrLocation } from "react-icons/gr";
-import { TfiEmail } from "react-icons/tfi";
 import { FiPhoneCall } from "react-icons/fi";
 import { BsSkype } from "react-icons/bs";
+import { MdOutlineMarkEmailUnread, MdLocationOn } from "react-icons/md";
 
 function Html() {
   return (
     <div>
       <div>
-        {/* <header id="header" className="fixed-top ">
-          <div className="container d-flex align-items-center">
-            <h1 className="logo me-auto">
-              <a href="index.html">Arsha</a>
-            </h1>
-
-            <nav id="navbar" className="navbar">
-              <ul>
-                <li>
-                  <a className="nav-link scrollto active" href="#hero">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link scrollto" href="#about">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link scrollto" href="#services">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link   scrollto" href="#portfolio">
-                    Portfolio
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link scrollto" href="#team">
-                    Team
-                  </a>
-                </li>
-                <li className="dropdown">
-                  <a href="#">
-                    <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#">Drop Down 1</a>
-                    </li>
-                    <li className="dropdown">
-                      <a href="#">
-                        <span>Deep Drop Down</span> <i className="bi bi-chevron-right"></i>
-                      </a>
-                      <ul>
-                        <li>
-                          <a href="#">Deep Drop Down 1</a>
-                        </li>
-                        <li>
-                          <a href="#">Deep Drop Down 2</a>
-                        </li>
-                        <li>
-                          <a href="#">Deep Drop Down 3</a>
-                        </li>
-                        <li>
-                          <a href="#">Deep Drop Down 4</a>
-                        </li>
-                        <li>
-                          <a href="#">Deep Drop Down 5</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">Drop Down 2</a>
-                    </li>
-                    <li>
-                      <a href="#">Drop Down 3</a>
-                    </li>
-                    <li>
-                      <a href="#">Drop Down 4</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a className="nav-link scrollto" href="#contact">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a className="getstarted scrollto" href="#about">
-                    Get Started
-                  </a>
-                </li>
-              </ul>
-              <i className="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-          </div>
-        </header> */}
-
         <section id="hero" className="d-flex align-items-center">
           <div className="container">
             <div className="row">
@@ -118,7 +27,7 @@ function Html() {
                 <h1>Better Solutions For Your Business</h1>
                 <h2>We are team of talented designers making websites with Bootstrap</h2>
                 <div className="d-flex justify-content-center justify-content-lg-start">
-                  <a href="#about" className="btn-get-started scrollto">
+                  <a href="/#/step-1" className="btn-get-started scrollto">
                     Get Started
                   </a>
                   <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="glightbox btn-watch-video">
@@ -984,18 +893,20 @@ function Html() {
                   <div className="info">
                     <div className="address">
                       <i className="bi bi-geo-alt">
-                        <GrLocation />
+                        <MdLocationOn />
                       </i>
                       <h4>Location:</h4>
-                      <p>A108 Adam Street, New York, NY 535022</p>
+                      <p>2103 Eastland Dr, STE A, Bloomington, IL 61704</p>
                     </div>
 
                     <div className="email">
                       <i className="bi bi-envelope">
-                        <TfiEmail />
+                        <MdOutlineMarkEmailUnread />
                       </i>
                       <h4>Email:</h4>
-                      <p>info@example.com</p>
+                      <p>
+                        <a href="mailto:vijay@aviarfs.com">Vijay@aviarfs.com</a>
+                      </p>
                     </div>
 
                     <div className="phone">
@@ -1003,13 +914,17 @@ function Html() {
                         <FiPhoneCall />
                       </i>
                       <h4>Call:</h4>
-                      <p>+1 5589 55488 55s</p>
+                      <p>
+                        <a href="tel:3097501082">+1 3097501082</a>
+                      </p>
                     </div>
 
                     <iframe
-                      frameborder="0"
-                      // style="border:0; width: 100%; height: 290px;"
-                      allowfullscreen
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                      frameBorder="0"
+                      style={{ border: "0", width: " 100%", height: "290px" }}
+                      allowFullScreen
+                      target="_parent"
                     ></iframe>
                   </div>
                 </div>
@@ -1068,16 +983,21 @@ function Html() {
             <div className="container">
               <div className="row">
                 <div className="col-lg-3 col-md-6 footer-contact">
-                  <h3>Arsha</h3>
+                  <h3>Aviar </h3>
                   <p>
-                    A108 Adam Street <br />
-                    New York, NY 535022
+                    2103 Eastland Dr <br />
+                    Street A<br />
+                    {/* New York, NY 535022 */}
+                    Bloomington, IL 61704
                     <br />
                     United States <br />
                     <br />
-                    <strong>Phone:</strong> +1 5589 55488 55
+                    <strong>Phone:</strong> <a href="tel:3097501082">+1 3097501082</a>
                     <br />
-                    <strong>Email:</strong> info@example.com
+                    <strong>Email:</strong>
+                    <a href="mailto:loans@aviarfs.com" className="ms-1">
+                      loans@aviarfs.com
+                    </a>
                     <br />
                   </p>
                 </div>
@@ -1086,19 +1006,19 @@ function Html() {
                   <h4>Useful Links</h4>
                   <ul>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">Home</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#/">Home</a>
                     </li>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">About us</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#/calculator">Calculators</a>
                     </li>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">Services</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#/contactus">Contact Us</a>
                     </li>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#/">Terms of service</a>
                     </li>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#/">Privacy policy</a>
                     </li>
                   </ul>
                 </div>
@@ -1107,26 +1027,35 @@ function Html() {
                   <h4>Our Services</h4>
                   <ul>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#">Web Design & Development</a>
                     </li>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">Web Development</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#">Android Design & Development </a>
                     </li>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">Product Management</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#">Product Management</a>
                     </li>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#">Aviar Constructions</a>
                     </li>
                     <li>
-                      <i className="bx bx-chevron-right"></i> <a href="#">Graphic Design</a>
+                      <i className="bx bx-chevron-right"></i> <a href="/#">Aviar Finanacial Website</a>
                     </li>
                   </ul>
                 </div>
 
                 <div className="col-lg-3 col-md-6 footer-links">
                   <h4>Our Social Networks</h4>
-                  <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                  <p style={{ fontSize: "x-small" }}>
+                    “STATE OF ILLINOIS COMMUNITY REINVESTMENT NOTICE The Department of Financial and Professional
+                    Regulation (Department) evaluates our performance in meeting the financial services needs of this
+                    community, including the needs of low-income to moderate-income households. The Department takes
+                    this evaluation into account when deciding on certain applications submitted by us for approval by
+                    the Department. Your involvement is encouraged. You may obtain a copy of our evaluation once the
+                    Department completes our first evaluation. You may also submit signed, written comments about our
+                    performance in meeting community financial services needs to the Department. We will update this
+                    notice when our first evaluation has been issued.”
+                  </p>
                   <div className="social-links">
                     <a href="#" className="twitter">
                       <FaTwitter color="#fff" />
@@ -1151,25 +1080,31 @@ function Html() {
 
           <div className="container footer-bottom clearfix">
             <div className="copyright">
-              &copy; Copyright{" "}
+              &copy; Copyright
               <strong>
-                <span>Aviar</span>
+                <span> Aviar</span>
               </strong>
               . All Rights Reserved
             </div>
             <div className="credits">
-              Designed by <a href="https://bootstrapmade.com/">Aviar Technology Services</a>
+              Designed by
+              <a href="https://aviartechservices.com/" target="_blank" className="ms-1">
+                Aviar Technology Services
+              </a>
             </div>
           </div>
         </footer>
 
         {/* <div id="preloader"></div> */}
-        <a href="#" className="back-to-top d-flex align-items-center justify-content-center">
+        {/* <a href="/#/" className="back-to-top d-flex align-items-center justify-content-center">
           <i className="bi bi-arrow-up-short"></i>
-        </a>
+        </a> */}
       </div>
     </div>
   );
 }
+//  onClick={() => {
+//             window.open("https://aviartechservices.com/");
+//           }}
 
 export default Html;
