@@ -24,9 +24,13 @@ function Html() {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <h1>Better Solutions For Your Business</h1>
-                <h2>We are team of talented designers making websites with Bootstrap</h2>
-                <div className="d-flex justify-content-center justify-content-lg-start">
+                <h1>Aviar Financial Services with Vijay Govindarajan</h1>
+                <h2>
+                  Aviar Financial Services LLC is committed to serving customers with respect and attention to detail.
+                  Our core values of Honesty, Integrity, and Transparency flow from the corporate office down to the
+                  Loan Officer who will serve you. Contact Vijay today and become a believer.
+                </h2>
+                <div className="d-flex justify-content-center justify-content-lg-start mb-3">
                   <a href="/#/step-1" className="btn-get-started scrollto">
                     Get Started
                   </a>
@@ -48,27 +52,27 @@ function Html() {
             <div className="container">
               <div className="row" data-aos="zoom-in">
                 <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                  <img src={require("../img/clients/client-1.png")} className="img-fluid" alt="" />
+                  <img src={require("../img/clients/client-1.png")} className="img-fluid secondImage" alt="logo" />
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                  <img src={require("../img/clients/client-2.png")} className="img-fluid" alt="" />
+                  <img src={require("../img/clients/client-2.png")} className="img-fluid firstImage" alt="logo" />
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                  <img src={require("../img/clients/client-3.png")} className="img-fluid" alt="" />
+                  <img src={require("../img/clients/client-3.png")} className="img-fluid thirdImage" alt="logo" />
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                  <img src={require("../img/clients/client-4.png")} className="img-fluid" alt="" />
+                  <img src={require("../img/clients/client-4.png")} className="img-fluid fourthImage" alt="logo" />
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                  <img src={require("../img/clients/client-5.png")} className="img-fluid" alt="" />
+                  <img src={require("../img/clients/client-5.png")} className="img-fluid fifthImage" alt="logo" />
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                  <img src={require("../img/clients/client-6.png")} className="img-fluid" alt="" />
+                  <img src={require("../img/clients/client-6.png")} className="img-fluid fifthImage" alt="logo" />
                 </div>
               </div>
             </div>
@@ -77,35 +81,40 @@ function Html() {
           <section id="about" className="about">
             <div className="container" data-aos="fade-up">
               <div className="section-title">
-                <h2>About Us</h2>
+                <h2>How We Work</h2>
               </div>
 
               <div className="row content">
                 <div className="col-lg-6">
+                  <h5>Get the loan you need</h5>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
+                    Getting a loan doesn’t have to be a complicated process filled with headaches and paperwork. At Team
+                    USA Mortgage, we’re not just committed to finding you the perfect loan, we’re committed to making
+                    sure that the whole process is 100% pain–and hassle–free. We can qualify you in five minutes with
+                    our loan-by-phone program.
                   </p>
                   <ul>
                     <li>
-                      <BiCheckDouble color="blue" size={20} /> Ullamco laboris nisi ut aliquip ex ea commodo consequat
+                      <BiCheckDouble color="blue" size={20} />
+                      Apply now for a better mortgage experience through Encompass
                     </li>
-                    <li>
+                    {/* <li>
                       <BiCheckDouble color="blue" size={20} /> Duis aute irure dolor in reprehenderit in voluptate velit
                     </li>
                     <li>
                       <BiCheckDouble color="blue" size={20} /> Ullamco laboris nisi ut aliquip ex ea commodo consequat
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
                 <div className="col-lg-6 pt-4 pt-lg-0">
+                  <h5>We take care of all details, from application to closing.</h5>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    We have access to an endless pool of investors, so we can offer you more options with better rates
+                    and services than other mortgage providers. We are quick, efficient, friendly, and easy to talk to.
+                    We’ll make sure you’re informed and updated every step of the way.
                   </p>
-                  <a href="#" className="btn-learn-more">
-                    Learn More
+                  <a href="/#/step-1" className="btn-learn-more">
+                    Apply Now
                   </a>
                 </div>
               </div>
@@ -118,11 +127,12 @@ function Html() {
                 <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
                   <div className="content">
                     <h3>
-                      Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong>
+                      We take care of all details, from <strong>application to closing</strong>
                     </h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                      We have access to an endless pool of investors, so we can offer you more options with better rates
+                      and services than other mortgage providers. We are quick, efficient, friendly, and easy to talk
+                      to. We’ll make sure you’re informed and updated every step of the way.
                     </p>
                   </div>
 
@@ -130,46 +140,44 @@ function Html() {
                     <ul>
                       <li>
                         <a data-bs-toggle="collapse" className="collapse" data-bs-target="#accordion-list-1">
-                          <span>01</span> Non consectetur a erat nam at lectus urna duis?{" "}
+                          <span>01</span> HOME PURCHASING
                           <i className="bx bx-chevron-down icon-show"></i>
                           <i className="bx bx-chevron-up icon-close"></i>
                         </a>
                         <div id="accordion-list-1" className="collapse show" data-bs-parent=".accordion-list">
                           <p>
-                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
-                            curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            Turn the home of your dreams into reality. Whether you are buying your first home, second
+                            home, or vacation property.
                           </p>
                         </div>
                       </li>
 
                       <li>
                         <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" className="collapsed">
-                          <span>02</span> Feugiat scelerisque varius morbi enim nunc?{" "}
+                          <span>02</span> HOME REFINANCING
                           <i className="bx bx-chevron-down icon-show"></i>
                           <i className="bx bx-chevron-up icon-close"></i>
                         </a>
                         <div id="accordion-list-2" className="collapse" data-bs-parent=".accordion-list">
                           <p>
-                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit
-                            laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa
-                            tincidunt dui.
+                            Save money by taking advantage of the lowest rates available. Whether you are looking to
+                            lower your rate, lower your monthly payment, or tap into your home's equity.
                           </p>
                         </div>
                       </li>
 
                       <li>
                         <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" className="collapsed">
-                          <span>03</span> Dolor sit amet consectetur adipiscing elit?{" "}
+                          <span>03</span> We make it easy
                           <i className="bx bx-chevron-down icon-show"></i>
                           <i className="bx bx-chevron-up icon-close"></i>
                         </a>
                         <div id="accordion-list-3" className="collapse" data-bs-parent=".accordion-list">
                           <p>
-                            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
-                            elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
-                            pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at
-                            elementum eu facilisis sed odio morbi quis
+                            Once you've made an offer and it's been accepted, it's time to apply for the loan. It's very
+                            easy, and you can apply online, right here on our website. After the offer has been accepted
+                            and you have submitted your loan application, we'll order the professional appraisal on the
+                            home.
                           </p>
                         </div>
                       </li>
@@ -195,16 +203,16 @@ function Html() {
                   <img src={require("../img/skills.png")} className="img-fluid" alt="" />
                 </div>
                 <div className="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-                  <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+                  <h3>Progressbar</h3>
                   <p className="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
+                    Bank's mortgage loans and start your home mortgage process today. Compare mortgages, see current
+                    rates, calculate monthly payments and more.
                   </p>
 
                   <div className="skills-content">
                     <div className="progress">
                       <span className="skill">
-                        HTML <i className="val">100%</i>
+                        Personal Loan <i className="val">100%</i>
                       </span>
                       <div className="progress-bar-wrap">
                         <ProgressBar now={100} />
@@ -213,7 +221,7 @@ function Html() {
 
                     <div className="progress">
                       <span className="skill">
-                        CSS <i className="val">90%</i>
+                        Business Loan <i className="val">90%</i>
                       </span>
                       <div className="progress-bar-wrap">
                         <ProgressBar now={90} />
@@ -222,7 +230,7 @@ function Html() {
 
                     <div className="progress">
                       <span className="skill">
-                        JavaScript <i className="val">75%</i>
+                        Commercial Loan <i className="val">75%</i>
                       </span>
                       <div className="progress-bar-wrap">
                         <ProgressBar now={75} />
@@ -231,7 +239,7 @@ function Html() {
 
                     <div className="progress">
                       <span className="skill">
-                        Photoshop <i className="val">55%</i>
+                        Health Loan<i className="val">55%</i>
                       </span>
                       <div className="progress-bar-wrap">
                         <ProgressBar now={55} />
@@ -248,9 +256,10 @@ function Html() {
               <div className="section-title">
                 <h2>Services</h2>
                 <p>
-                  Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                  fugiat sit in iste officiis commodi quidem hic quas.
+                  Also known as a direct lender, a mortgage company typically only specializes in mortgage products and
+                  does not offer other banking services such as checking, investments, or loans for other purposes.
+                  Moreover, they will usually offer their own products and will not offer loans or products from other
+                  companies.
                 </p>
               </div>
 
@@ -261,9 +270,12 @@ function Html() {
                       <BsDribbble size={35} color="#47b2e4" />
                     </div>
                     <h4>
-                      <a href="">Lorem Ipsum</a>
+                      <a href="">Personal Loan</a>
                     </h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    <p>
+                      You may use a personal loan to consolidate debt, pay for home renovations, or plan a dream
+                      wedding.
+                    </p>
                   </div>
                 </div>
 
@@ -277,9 +289,12 @@ function Html() {
                       <FiFileText size={35} color="#47b2e4" />
                     </div>
                     <h4>
-                      <a href="">Sed ut perspici</a>
+                      <a href="">Business Loan</a>
                     </h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    <p>
+                      Bank loans, mezzanine financing, asset-based financing, invoice financing, microloans, business
+                      cash advances and cash flow loans.
+                    </p>
                   </div>
                 </div>
 
@@ -293,9 +308,9 @@ function Html() {
                       <BiTachometer size={35} color="#47b2e4" />
                     </div>
                     <h4>
-                      <a href="">Magni Dolores</a>
+                      <a href="">Commercial Loan</a>
                     </h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    <p>Borrower to purchase vehicles like trucks, buses, tippers, light commercial vehicles.</p>
                   </div>
                 </div>
 
@@ -309,9 +324,12 @@ function Html() {
                       <BiLayer size={35} color="#47b2e4" />
                     </div>
                     <h4>
-                      <a href="">Nemo Enim</a>
+                      <a href="">Health Loan</a>
                     </h4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                    <p>
+                      A medical loan is a form of personal loan that you can avail of in the event of a medical
+                      emergency.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -322,16 +340,16 @@ function Html() {
             <div className="container" data-aos="zoom-in">
               <div className="row">
                 <div className="col-lg-9 text-center text-lg-start">
-                  <h3>Call To Action</h3>
+                  <h3>We take care of all details, from application to closing.</h3>
                   <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.
+                    We have access to an endless pool of investors, so we can offer you more options with better rates
+                    and services than other mortgage providers. We are quick, efficient, friendly, and easy to talk to.
+                    We’ll make sure you’re informed and updated every step of the way.
                   </p>
                 </div>
                 <div className="col-lg-3 cta-btn-container text-center">
-                  <a className="cta-btn align-middle" href="#">
-                    Call To Action
+                  <a className="cta-btn align-middle" href="/#/step-1">
+                    Apply To Action
                   </a>
                 </div>
               </div>
@@ -784,12 +802,14 @@ function Html() {
           <section id="faq" className="faq section-bg">
             <div className="container" data-aos="fade-up">
               <div className="section-title">
-                <h2>Frequently Asked Questions</h2>
+                <h2>The Loan Process: an Overview</h2>
                 <p>
-                  Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                  fugiat sit in iste officiis commodi quidem hic quas.
+                  There is no doubt ; getting a mortgage loan is a complicated process. You wouldn't be visiting our
+                  website if you could fill out a simple application and get the best loan funded the same day. We do
+                  the heavy lifting for you, so you can concentrate on what's important — preparing to move into your
+                  new home or saving money.
                 </p>
+                <p> Getting a mortgage loan involves four major steps.</p>
               </div>
 
               <div className="faq-list">
@@ -797,30 +817,36 @@ function Html() {
                   <li data-aos="fade-up" data-aos-delay="100">
                     <a data-bs-toggle="collapse" className="collapse" data-bs-target="#faq-list-1">
                       <GrCircleQuestion color="#47b2e4" className="me-2" />
-                      Non consectetur a erat nam at lectus urna duis? <i className="bx bx-chevron-down icon-show"></i>
+                      Step one: determine how much you can borrow <i className="bx bx-chevron-down icon-show"></i>
                       <i className="bx bx-chevron-up icon-close"></i>
                     </a>
                     <div id="faq-list-1" className="collapse show" data-bs-parent=".faq-list">
                       <p>
-                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
-                        curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        A couple of factors determine this amount. What kind of monthly payment are you looking for? And
+                        given your unique credit and employment history, income and debt, and goals, how much will a
+                        lender loan you? You can get a good idea of your preferred payment abount using the calculators
+                        on our website. We'll also help you through different scenarios by asking a few simple
+                        questions. Because lender guidelines are fairly standard, we can give you a good idea of how
+                        much you can borrow after a short conversation.
                       </p>
                     </div>
                   </li>
 
                   <li data-aos="fade-up" data-aos-delay="200">
                     <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" className="collapsed">
-                      {" "}
                       <GrCircleQuestion color="#47b2e4" className="me-2" />
-                      Feugiat scelerisque varius morbi enim nunc? <i className="bx bx-chevron-down icon-show"></i>
+                      Step two: pre-qualify for your loan<i className="bx bx-chevron-down icon-show"></i>
                       <i className="bx bx-chevron-up icon-close"></i>
                     </a>
                     <div id="faq-list-2" className="collapse" data-bs-parent=".faq-list">
                       <p>
-                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit
-                        laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est
-                        pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt
-                        dui.
+                        This is where Team USA Mortgage can begin saving you money. You will give us information on your
+                        employment, assets, and your residence history. You'll provide information on your employment,
+                        asset, and residence history. We will get your credit report and score (with your permission.
+                        After we have reviewed all this info we give you a letter of pre-qualification. Your REALTOR®
+                        should use the pre-qual (as they may call it) in order to make the best offer on the home you
+                        choose. The pre-qual letter gives you buying clout! While you're picking out the home that's
+                        right for you, we're busy researching the loan program that's right for your situation.
                       </p>
                     </div>
                   </li>
@@ -828,15 +854,14 @@ function Html() {
                   <li data-aos="fade-up" data-aos-delay="300">
                     <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" className="collapsed">
                       <GrCircleQuestion color="#47b2e4" className="me-2" />
-                      Dolor sit amet consectetur adipiscing elit? <i className="bx bx-chevron-down icon-show"></i>
+                      Step three: apply now! We make it easy <i className="bx bx-chevron-down icon-show"></i>
                       <i className="bx bx-chevron-up icon-close"></i>
                     </a>
                     <div id="faq-list-3" className="collapse" data-bs-parent=".faq-list">
                       <p>
-                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
-                        elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
-                        pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at
-                        elementum eu facilisis sed odio morbi quis
+                        Once you've made an offer and it's been accepted, it's time to apply for the loan. It's very
+                        easy, and you can apply online, right here on our website. After the offer has been accepted and
+                        you have submitted your loan application, we'll order the professional appraisal on the home.
                       </p>
                     </div>
                   </li>
@@ -844,36 +869,28 @@ function Html() {
                   <li data-aos="fade-up" data-aos-delay="400">
                     <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" className="collapsed">
                       <GrCircleQuestion color="#47b2e4" className="me-2" />
-                      Tempus quam pellentesque nec nam aliquam sem et tortor consequat?{" "}
+                      Step four: funding
                       <i className="bx bx-chevron-down icon-show"></i>
                       <i className="bx bx-chevron-up icon-close"></i>
                     </a>
                     <div id="faq-list-4" className="collapse" data-bs-parent=".faq-list">
                       <p>
-                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante
-                        in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum
-                        est. Purus gravida quis blandit turpis cursus in.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li data-aos="fade-up" data-aos-delay="500">
-                    <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" className="collapsed">
-                      <GrCircleQuestion color="#47b2e4" className="me-2" />
-                      Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?{" "}
-                      <i className="bx bx-chevron-down icon-show"></i>
-                      <i className="bx bx-chevron-up icon-close"></i>
-                    </a>
-                    <div id="faq-list-5" className="collapse" data-bs-parent=".faq-list">
-                      <p>
-                        Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer
-                        malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor
-                        sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                        The agents will find an escrow/title company to handle the "funding" of the loan and closing.
+                        We'll coordinate with this company to make sure the papers your lender needs are in order, and
+                        you will probably likely sign all these papers at their officeWe do all the work to coordinate
+                        with this company on your date to close. Because you don't have to worry with this coordination,
+                        you can think about the move, painting, new carpet, and the details involved in getting a new
+                        home.
                       </p>
                     </div>
                   </li>
                 </ul>
               </div>
+              <p className="mt-2">
+                You've answered some few questions, provided lots of information, applied online, and before you know
+                it, you're deciding when to move in! We take care of the mortgage legwork so you can spend your time
+                finding your new home.
+              </p>
             </div>
           </section>
 
