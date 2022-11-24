@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 import { values } from "../UnitType.js";
 import { states } from "../state.js";
-import Footer from "../../comman/footer";
 import Sidebar from "../../container/Sidebar";
 
 const Home = [
@@ -371,7 +370,6 @@ function AssetPageOne() {
           </Form>
         </Container>
       </div>
-      <Footer />
     </div>
   );
 }

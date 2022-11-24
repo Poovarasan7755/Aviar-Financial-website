@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../comman/footer";
 // import "../css/credit.css"
 
 function Credit() {
@@ -12,7 +11,7 @@ function Credit() {
       <Container fluid>
         <Row>
           <div
-            className="color mt-5"
+            className="color"
             style={{
               backgroundImage: `url("https://asset-service-bucket-prod.s3.us-west-2.amazonaws.com/61ba994e-23d4-485c-b85e-f0eb74eb72c3")`,
             }}
@@ -24,7 +23,7 @@ function Credit() {
           </div>
         </Row>
       </Container>
-      <Container fluid style={{width:"90%"}}>
+      <Container fluid style={{ width: "90%" }}>
         <h4 className="heading mt-5 mb-3" style={{ color: "rgb(0 155 223)" }}>
           What is a credit score?
         </h4>
@@ -32,8 +31,10 @@ function Credit() {
           Before deciding on what terms they will offer you a loan (which they base on their risk), lenders want to
           discover two things about you: your ability to pay back the loan, and{" "}
           <b>if you are willing to pay it back.</b> To assess your ability to repay, they assess your{" "}
-          <a className="contact" href="">debt-to-income ratio</a> . To assess how willing you are to repay, they use your
-          credit score.{" "}
+          <a className="contact" href="">
+            debt-to-income ratio
+          </a>{" "}
+          . To assess how willing you are to repay, they use your credit score.{" "}
         </p>
         <p className="para">
           The most widely used credit scores are called FICO scores, which were developed by Fair Isaac & Company, Inc.
@@ -61,8 +62,11 @@ function Credit() {
         </p>
         <p className="mt-5 mb-5">
           <b>
-            Have questions about the loan process? Call Vijay at <a className="contact" href="309-750-1082">309-750-1082</a>. We answer
-            questions about the loan process every day.
+            Have questions about the loan process? Call Vijay at{" "}
+            <a className="contact" href="309-750-1082">
+              309-750-1082
+            </a>
+            . We answer questions about the loan process every day.
           </b>
         </p>
         <div className="homepage-button mt-5 mb-5">
@@ -72,7 +76,6 @@ function Credit() {
           </Button>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 }

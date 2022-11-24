@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import { ErrorMessage, Formik } from "formik";
 import * as Yup from "yup";
 import "../css/login.scss";
-import Footer from "../comman/footer";
 
 function Login() {
   const [passwordShown, setPasswordShown] = useState(false);
@@ -100,7 +99,6 @@ function Login() {
           }}
         </Formik>
       </Container>
-      <Footer />
     </div>
   );
 }

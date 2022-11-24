@@ -1,13 +1,12 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
-import Footer from "../../comman/footer";
 import { useNavigate } from "react-router-dom";
 import "../../css/loanprocess.scss";
 
 function Loanprocess() {
   const navigate = useNavigate();
   return (
-    <div >
+    <div>
       <Container fluid>
         <div
           className="color mt-5"
@@ -21,7 +20,7 @@ function Loanprocess() {
           </div>
         </div>
       </Container>
-      <Container fluid style={{width:"90%"}}>
+      <Container fluid style={{ width: "90%" }}>
         <h4 className="heading mt-5 mb-3" style={{ color: "rgb(0 155 223)" }}>
           The Loan Process: an Overview
         </h4>
@@ -50,13 +49,13 @@ function Loanprocess() {
           Step two: pre-qualify for your loan
         </h5>
         <p className="para">
-          This is where Aviar Financial Services can begin saving you money. You will give us information on your employment,
-          assets, and your residence history. You'll provide information on your employment, asset, and residence
-          history. We will get your credit report and score (with your permission. After we have reviewed all this info
-          we give you a letter of pre-qualification. Your REALTOR® should use the pre-qual (as they may call it) in
-          order to make the best offer on the home you choose. The pre-qual letter gives you buying clout! While you're
-          picking out the home that's right for you, we're busy researching the loan program that's right for your
-          situation.
+          This is where Aviar Financial Services can begin saving you money. You will give us information on your
+          employment, assets, and your residence history. You'll provide information on your employment, asset, and
+          residence history. We will get your credit report and score (with your permission. After we have reviewed all
+          this info we give you a letter of pre-qualification. Your REALTOR® should use the pre-qual (as they may call
+          it) in order to make the best offer on the home you choose. The pre-qual letter gives you buying clout! While
+          you're picking out the home that's right for you, we're busy researching the loan program that's right for
+          your situation.
         </p>
         <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
           Step three: <span className="text-primary">apply now!</span> We make it easy
@@ -94,7 +93,6 @@ function Loanprocess() {
           </Button>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 }

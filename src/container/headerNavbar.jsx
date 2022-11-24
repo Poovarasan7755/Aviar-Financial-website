@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../css/css/style.scss";
 import logo from "./logo.png";
 import { AiOutlineArrowDown } from "react-icons/ai";
+import { BsArrowLeftShort } from "react-icons/bs";
 
 export default function HeaderNavbar() {
   // const [show, setShow] = useState(false);
@@ -43,9 +44,12 @@ export default function HeaderNavbar() {
             </li>
             <li class="dropdown">
               <Link to={{ pathname: "/loanprocess" }}>
-                <span>HOME lOAN BASICS</span> <AiOutlineArrowDown class="bi bi-chevron-down ms-2 mt-1" />
+                <span>THE LOAN PROCESS</span> <AiOutlineArrowDown class="bi bi-chevron-down ms-2 mt-1" />
               </Link>
               <ul>
+                <li>
+                  <Link to={{ pathname: "/homeloan/basics" }}>WHO DOES WHAT ?</Link>
+                </li>
                 <li>
                   <Link to={{ pathname: "/credit" }}>WHAT IS A CREDIT SCORE</Link>
                 </li>
@@ -63,7 +67,7 @@ export default function HeaderNavbar() {
                 </li>
                 <li class="dropdown">
                   <a href="/closingcost">
-                    <span>CLOSING COSTS</span>
+                    <BsArrowLeftShort size={20} /> <span>CLOSING COSTS</span>
                   </a>
                   <ul>
                     <li>

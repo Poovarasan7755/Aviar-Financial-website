@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../comman/footer";
 import images from "./images.jpg";
 
 function Closingcost() {
@@ -9,7 +8,7 @@ function Closingcost() {
 
   return (
     <div>
-      <div >
+      <div>
         <Container fluid>
           <Row>
             <div
@@ -26,7 +25,7 @@ function Closingcost() {
             <h4 className="heading mt-5 mb-5 ms-4" style={{ color: "rgb(0 155 223)" }}>
               Don't Forget Closing Costs!
             </h4>
-            <Row >
+            <Row>
               <Col md={6}>
                 <div className="d-flex justify-content-center">
                   {" "}
@@ -51,13 +50,13 @@ function Closingcost() {
                   Very shortly after you submit your application, we will provide you with a "Loan Estimate" of your
                   closing costs. The closing cost estimate comes out of our past experience. It's important to note that
                   while our LEs are very accurate, we can't always predict your costs to the penny. We handle questions
-                  about these costs every day at Aviar Financial Services, so don't hesitate to ask if we can help answer your
-                  questions.
+                  about these costs every day at Aviar Financial Services, so don't hesitate to ask if we can help
+                  answer your questions.
                 </p>
                 <p className="para">
                   We've provided a general list of these costs below, but we will provide you a specific list of closing
-                  costs, with amounts, soon after you have completed your loan application. At Aviar Financial Services, we
-                  don't believe in surprises, so if your costs change, we will be sure to let you know immediately.
+                  costs, with amounts, soon after you have completed your loan application. At Aviar Financial Services,
+                  we don't believe in surprises, so if your costs change, we will be sure to let you know immediately.
                 </p>
               </Col>
             </Row>
@@ -71,7 +70,6 @@ function Closingcost() {
           </Row>
         </Container>
       </div>
-      <Footer />
     </div>
   );
 }

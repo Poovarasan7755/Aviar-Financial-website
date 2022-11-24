@@ -5,7 +5,6 @@ import { ErrorMessage, Formik } from "formik";
 import * as Yup from "yup";
 import "../Signup/signup.scss";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../comman/footer";
 function Signup() {
   const navigate = useNavigate();
 
@@ -227,7 +226,6 @@ function Signup() {
           }}
         </Formik>
       </Container>
-      <Footer />
     </div>
   );
 }

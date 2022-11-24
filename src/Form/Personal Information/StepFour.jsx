@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Sidebar from "../../container/Sidebar";
-import Footer from "../../comman/footer";
 
 const initialValues = { email: "", firstName: "", lastName: "", date: "", securitynumber: "" };
 
@@ -308,7 +307,6 @@ function StepFour() {
             );
           }}
         </Formik>
-        <Footer />
       </div>
     </div>
   );

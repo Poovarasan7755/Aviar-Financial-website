@@ -46,6 +46,7 @@ const StepTwo = lazy(() => import("../Form/LoanDetails/StepTwo"));
 const StepFour = lazy(() => import("../Form/Personal Information/StepFour"));
 const StepFive = lazy(() => import("../Form/Personal Information/StepFive"));
 const Html = lazy(() => import("../components/ButtonsComponent/html"));
+const HomeLoanBasics = lazy(() => import("../components/ContentPages/homeLoanBasics"));
 
 export {
   Homepage,
@@ -94,4 +95,5 @@ export {
   StepFour,
   StepFive,
   Html,
+  HomeLoanBasics,
 };

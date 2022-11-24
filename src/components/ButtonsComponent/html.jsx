@@ -1,7 +1,7 @@
 import React from "react";
 import homepage from "../img/hero-img.png";
 import img from "../img/why-us.png";
-import { BiCheckDouble, BiTachometer, BiLayer } from "react-icons/bi";
+import { BiCheckDouble, BiTachometer, BiLayer, BiPhone } from "react-icons/bi";
 import { BsDribbble } from "react-icons/bs";
 import { FiFileText } from "react-icons/fi";
 import { ProgressBar } from "react-bootstrap";
@@ -690,7 +690,7 @@ function Html() {
                 </p>
               </div>
 
-              <div className="row">
+              {/* <div className="row">
                 <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                   <div className="box">
                     <h3>Free Plan</h3>
@@ -777,7 +777,7 @@ function Html() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
 
@@ -919,12 +919,18 @@ function Html() {
                       </p>
                     </div>
 
-                    <iframe
+                    {/* <iframe
                       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
                       frameBorder="0"
                       style={{ border: "0", width: " 100%", height: "290px" }}
                       allowFullScreen
                       target="_parent"
+                    ></iframe> */}
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d98980.77958290937!2d-86.60188667868584!3d39.17132507403884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbg!4v1669109434552!5m2!1sen!2sbg"
+                      frameBorder="0"
+                      style={{ border: "0", width: " 100%", height: "290px" }}
+                      allowfullscreen
                     ></iframe>
                   </div>
                 </div>
@@ -963,137 +969,6 @@ function Html() {
             </div>
           </section>
         </main>
-        <footer id="footer">
-          <div className="footer-newsletter">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-lg-6">
-                  <h4>Join Our Newsletter</h4>
-                  <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                  <form action="" method="post">
-                    <input type="email" name="email" />
-                    <input type="submit" value="Subscribe" />
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="footer-top">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-3 col-md-6 footer-contact">
-                  <h3>Aviar </h3>
-                  <p>
-                    2103 Eastland Dr <br />
-                    Street A<br />
-                    {/* New York, NY 535022 */}
-                    Bloomington, IL 61704
-                    <br />
-                    United States <br />
-                    <br />
-                    <strong>Phone:</strong> <a href="tel:3097501082">+1 3097501082</a>
-                    <br />
-                    <strong>Email:</strong>
-                    <a href="mailto:loans@aviarfs.com" className="ms-1">
-                      loans@aviarfs.com
-                    </a>
-                    <br />
-                  </p>
-                </div>
-
-                <div className="col-lg-3 col-md-6 footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#/">Home</a>
-                    </li>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#/calculator">Calculators</a>
-                    </li>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#/contactus">Contact Us</a>
-                    </li>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#/">Terms of service</a>
-                    </li>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#/">Privacy policy</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="col-lg-3 col-md-6 footer-links">
-                  <h4>Our Services</h4>
-                  <ul>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#">Web Design & Development</a>
-                    </li>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#">Android Design & Development </a>
-                    </li>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#">Product Management</a>
-                    </li>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#">Aviar Constructions</a>
-                    </li>
-                    <li>
-                      <i className="bx bx-chevron-right"></i> <a href="/#">Aviar Finanacial Website</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="col-lg-3 col-md-6 footer-links">
-                  <h4>Our Social Networks</h4>
-                  <p style={{ fontSize: "x-small" }}>
-                    “STATE OF ILLINOIS COMMUNITY REINVESTMENT NOTICE The Department of Financial and Professional
-                    Regulation (Department) evaluates our performance in meeting the financial services needs of this
-                    community, including the needs of low-income to moderate-income households. The Department takes
-                    this evaluation into account when deciding on certain applications submitted by us for approval by
-                    the Department. Your involvement is encouraged. You may obtain a copy of our evaluation once the
-                    Department completes our first evaluation. You may also submit signed, written comments about our
-                    performance in meeting community financial services needs to the Department. We will update this
-                    notice when our first evaluation has been issued.”
-                  </p>
-                  <div className="social-links">
-                    <a href="#" className="twitter">
-                      <FaTwitter color="#fff" />
-                    </a>
-                    <a href="#" className="facebook">
-                      <FaFacebookF color="#fff" />
-                    </a>
-                    <a href="#" className="instagram">
-                      <AiFillInstagram color="#fff" />
-                    </a>
-                    <a href="#" className="google-plus">
-                      <BsSkype color="#fff" />
-                    </a>
-                    <a href="#" className="linkedin">
-                      <FaLinkedinIn color="#fff" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="container footer-bottom clearfix">
-            <div className="copyright">
-              &copy; Copyright
-              <strong>
-                <span> Aviar</span>
-              </strong>
-              . All Rights Reserved
-            </div>
-            <div className="credits">
-              Designed by
-              <a href="https://aviartechservices.com/" target="_blank" className="ms-1">
-                Aviar Technology Services
-              </a>
-            </div>
-          </div>
-        </footer>
 
         {/* <div id="preloader"></div> */}
         {/* <a href="/#/" className="back-to-top d-flex align-items-center justify-content-center">
@@ -1103,8 +978,4 @@ function Html() {
     </div>
   );
 }
-//  onClick={() => {
-//             window.open("https://aviartechservices.com/");
-//           }}
-
 export default Html;

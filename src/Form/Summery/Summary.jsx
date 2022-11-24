@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Row, Col, T } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../comman/footer";
 import Sidebar from "../../container/Sidebar";
 
 import "../../css/Form.scss";
@@ -446,7 +445,6 @@ export default function Summary() {
           </Col>
         </Row>
       </div>
-      <Footer />
     </div>
   );
 }

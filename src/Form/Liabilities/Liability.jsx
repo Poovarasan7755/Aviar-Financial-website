@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Button, Row, Col, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Select from "react-select";
-import Footer from "../../comman/footer";
 import Sidebar from "../../container/Sidebar";
 
 const Expense = [
@@ -215,7 +214,6 @@ function Liabilities() {
           </Col>
         </Row>
       </div>
-      <Footer />
     </div>
   );
 }

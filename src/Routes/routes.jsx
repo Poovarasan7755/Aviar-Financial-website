@@ -48,7 +48,9 @@ import {
   Taxclosingcost,
   Taxsaving,
   Username,
+  HomeLoanBasics,
 } from "../Pages";
+import Foote from "../container/footer";
 
 //  spinner or Loader
 const fallbackLoader = (
@@ -108,11 +110,12 @@ export default function Routers() {
               <Route path="/resetpassword" element={<Resetpassword />} />
               <Route path="/usernameforget" element={<Username />} />
               <Route path="/passwordforgot" element={<Password />} />
-              <Route path="/declaration" element={<Declaration />} />
               <Route path="/privacypolicy" element={<Privacypolicy />} />
               <Route path="/companystatelicences" element={<Companystatelicences />} />
+              <Route path="/homeloan/basics" element={<HomeLoanBasics />} />
             </Routes>
           </div>
+          <Foote />
         </Suspense>
       </HashRouter>
     </>

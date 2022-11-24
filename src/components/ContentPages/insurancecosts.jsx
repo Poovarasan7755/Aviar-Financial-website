@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import Footer from "../../comman/footer";
 
 function Insurancecosts() {
   return (
-    <div >
+    <div>
       <Container fluid>
         <div
           className="color mt-5"
@@ -20,7 +19,7 @@ function Insurancecosts() {
           </div>
         </div>
       </Container>
-      <Container fluid style={{width:"90%"}}>
+      <Container fluid style={{ width: "90%" }}>
         <h5 style={{ color: "rgb(0 155 223)" }} className="head  mt-4">
           Homeowner's Insurance
         </h5>
@@ -57,7 +56,6 @@ function Insurancecosts() {
           </b>
         </p>
       </Container>
-      <Footer />
     </div>
   );
 }

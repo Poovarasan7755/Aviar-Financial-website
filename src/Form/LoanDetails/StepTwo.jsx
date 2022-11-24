@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Form, Button, Row, Col, Dropdown } from "react-bootstrap";
 import { useNavigate, useLocation } from "react-router-dom";
 import Select from "react-select";
-import Footer from "../../comman/footer";
 import Sidebar from "../../container/Sidebar";
 
 const Option = [
@@ -405,7 +404,6 @@ export default function StepTwo(props) {
             </Button>
           </Col>
         </Row>
-        <Footer />
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../comman/footer";
 import Sidebar from "../../container/Sidebar";
 
 export default function Declarationpage() {
@@ -182,7 +181,6 @@ export default function Declarationpage() {
           </Col>
         </Row>
       </div>
-      <Footer />
     </div>
   );
 }

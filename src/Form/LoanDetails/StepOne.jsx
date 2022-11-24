@@ -5,7 +5,6 @@ import "../../css/Form.scss";
 import { useNavigate } from "react-router-dom";
 import Select from "react-select";
 import Sidebar from "../../container/Sidebar";
-import Footer from "../../comman/footer";
 
 const Option = [
   {
@@ -213,7 +212,6 @@ function StepOne() {
             </Row>
           </Form>
         </div>
-        <Footer />
       </div>
     </Container>
   );

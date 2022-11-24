@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import Footer from "../../comman/footer";
 
 function loancost() {
   return (
@@ -19,7 +18,7 @@ function loancost() {
             </div>
           </div>
         </Container>
-        <Container fluid style={{width:"90%"}}>
+        <Container fluid style={{ width: "90%" }}>
           <h5 style={{ color: "rgb(0 155 223)" }} className="mt-4">
             Loan Origination Fee
           </h5>
@@ -63,7 +62,6 @@ function loancost() {
           </p>
         </Container>
       </div>
-      <Footer />
     </div>
   );
 }

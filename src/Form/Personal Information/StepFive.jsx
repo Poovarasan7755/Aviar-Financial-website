@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Button, Form, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Select from "react-select";
-import Footer from "../../comman/footer";
 import Sidebar from "../../container/Sidebar";
 import { states } from "../state";
 import { values } from "../UnitType";
@@ -285,7 +284,6 @@ function StepFive() {
           </Form>
         </Container>
       </div>
-      <Footer />
     </div>
   );
 }

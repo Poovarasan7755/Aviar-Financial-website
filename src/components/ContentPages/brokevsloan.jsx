@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Row,Button } from "react-bootstrap";
+import { Container, Row, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../comman/footer";
 
 function Brokevsloan() {
   const navigate = useNavigate();
@@ -11,19 +10,18 @@ function Brokevsloan() {
       <Container fluid>
         <Row>
           <div
-            className="color mt-5"
+            className="color"
             style={{
               backgroundImage: `url("https://asset-service-bucket-prod.s3.us-west-2.amazonaws.com/eb86c5c1-4586-47ec-a6d5-88f1d08829a8")`,
             }}
           >
             <div className="overlay-effect">
-              {" "}
               <h3 className="name">Mortgage Broker vs. Loan Officer</h3>
             </div>
           </div>
         </Row>
       </Container>
-      <Container fluid style={{width:"90%"}}>
+      <Container fluid style={{ width: "90%" }}>
         <h4 className="heading mt-5 mb-3" style={{ color: "rgb(0 155 223)" }}>
           Mortgage Broker or Loan Officer?
         </h4>
@@ -59,8 +57,11 @@ function Brokevsloan() {
           loan. Lenders compensate their loan officers with a commission or salary.
         </p>
         <p className="pt-3 text-center">
-          Have questions about the loan process? Call Vijay at <a className="contact" href="309-750-1082">309-750-1082</a>. We answer questions about the loan process
-          every day.
+          Have questions about the loan process? Call Vijay at{" "}
+          <a className="contact" href="309-750-1082">
+            309-750-1082
+          </a>
+          . We answer questions about the loan process every day.
         </p>
         <div className="homepage-button mt-5 mb-5">
           <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/step-1")}>
@@ -69,7 +70,6 @@ function Brokevsloan() {
           </Button>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 }

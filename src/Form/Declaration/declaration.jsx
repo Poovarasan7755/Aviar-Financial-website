@@ -3,7 +3,6 @@ import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import Select from "react-select";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../../container/Sidebar";
-import Footer from "../../comman/footer";
 
 const Option = [
   { label: "Yes", value: "1" },
@@ -421,7 +420,6 @@ function Declaration() {
           </Col>
         </Row>
       </div>
-      <Footer />
     </div>
   );
 }

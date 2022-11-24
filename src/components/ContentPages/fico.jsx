@@ -1,13 +1,12 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../comman/footer";
 
 function Fico() {
   const navigate = useNavigate();
 
   return (
-    <div >
+    <div>
       <Container fluid>
         <div
           className="color mt-5"
@@ -21,7 +20,7 @@ function Fico() {
           </div>
         </div>
       </Container>
-      <Container fluid style={{width:"90%"}}>
+      <Container fluid style={{ width: "90%" }}>
         <h5 className="heading mt-5" style={{ color: "rgb(0 155 223)" }}>
           About the FICO Credit Score
         </h5>
@@ -85,8 +84,11 @@ function Fico() {
           favorable mortgage.
         </p>
         <p className="pt-3">
-          Have questions about the loan process? Call Vijay at <a className="contact" href="309-750-1082">309-750-1082</a>. We answer questions about the loan process
-          every day.
+          Have questions about the loan process? Call Vijay at{" "}
+          <a className="contact" href="309-750-1082">
+            309-750-1082
+          </a>
+          . We answer questions about the loan process every day.
         </p>
         <div className="homepage-button mt-5 mb-5">
           <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/step-1")}>
@@ -95,7 +97,6 @@ function Fico() {
           </Button>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 }

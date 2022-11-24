@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../comman/footer";
 import Sidebar from "../../container/Sidebar";
 
 function StepThree() {
@@ -73,7 +72,6 @@ function StepThree() {
           </Form>
         </Container>
         <Container fluid>
-          <Footer />
         </Container>
       </div>
     </div>

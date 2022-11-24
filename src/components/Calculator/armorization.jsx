@@ -1,32 +1,32 @@
-import React from 'react';
-import { Container,Row,Col,Form,Button} from 'react-bootstrap';
-import Calculator from './calculator';
-import Footer from '../../comman/footer';
+import React from "react";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import Calculator from "./calculator";
 
 function armorization() {
-    const loginPageStyle = {
-        margin: "32px",
-        maxWidth: "530px",
-        background: "#fff",
-        padding: "30px",
-        
-        borderRadius: "10px",
-        // boxShadow: "0px 0px 10px 10px rgba(0,0,0,0.15)"
-      }
+  const loginPageStyle = {
+    margin: "32px",
+    maxWidth: "530px",
+    background: "#fff",
+    padding: "30px",
+
+    borderRadius: "10px",
+    // boxShadow: "0px 0px 10px 10px rgba(0,0,0,0.15)"
+  };
   return (
     <div>
-    <Container fluid>
-         <div
-        className="color mt-5"
-        style={{
-          backgroundImage: `url("https://asset-service-bucket-prod.s3.amazonaws.com/f0544e8f-5a69-480f-b1de-156918163c82")`,
-          
-        }}
-      >
-        <div className="overlay-text-text">
-          {" "}<div className='page-name'>
-          <h2>PAYMENT AMORTIZATION CALCULATOR</h2></div>
-        </div>
+      <Container fluid>
+        <div
+          className="color mt-5"
+          style={{
+            backgroundImage: `url("https://asset-service-bucket-prod.s3.amazonaws.com/f0544e8f-5a69-480f-b1de-156918163c82")`,
+          }}
+        >
+          <div className="overlay-text-text">
+            {" "}
+            <div className="page-name">
+              <h2>PAYMENT AMORTIZATION CALCULATOR</h2>
+            </div>
+          </div>
         </div>
         {/* <Row style={loginPageStyle}>
             <Col>
@@ -63,10 +63,9 @@ function armorization() {
       
             </Col>
         </Row> */}
-    </Container>
-    <Footer/>
+      </Container>
     </div>
-  )
+  );
 }
 
-export default armorization
+export default armorization;

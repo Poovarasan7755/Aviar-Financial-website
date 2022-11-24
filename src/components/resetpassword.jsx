@@ -5,7 +5,6 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { ErrorMessage, Formik } from "formik";
 import * as Yup from "yup";
-import Footer from "../comman/footer";
 function Resetpassword() {
   const [passwordShown, setPasswordShown] = useState(false);
 
@@ -80,7 +79,6 @@ function Resetpassword() {
           }}
         </Formik>
       </Container>
-      <Footer />
     </div>
   );
 }

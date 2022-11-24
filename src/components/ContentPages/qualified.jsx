@@ -1,13 +1,12 @@
 import React from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../comman/footer";
 
 function Qualified() {
   const navigate = useNavigate();
   return (
     <div>
-      <div >
+      <div>
         <Container fluid>
           <div
             className="color mt-5"
@@ -21,7 +20,7 @@ function Qualified() {
             </div>
           </div>
         </Container>
-        <Container fluid style={{width:"90%"}}>
+        <Container fluid style={{ width: "90%" }}>
           <h4 className="text-center mt-5 mb-2" style={{ color: "rgb(0 155 223)" }}>
             Why Pre-Qualification is Important
           </h4>
@@ -75,8 +74,11 @@ function Qualified() {
             call us at 218-237-5128.
           </p>
           <p className="pt-3">
-            Have questions about the loan process? Call Vijay at <a className="contact" href="309-750-1082">309-750-1082</a>. We answer
-            questions about the loan process every day.
+            Have questions about the loan process? Call Vijay at{" "}
+            <a className="contact" href="309-750-1082">
+              309-750-1082
+            </a>
+            . We answer questions about the loan process every day.
           </p>
           <div className="homepage-button mt-5 mb-5">
             <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/step-1")}>
@@ -86,7 +88,6 @@ function Qualified() {
           </div>
         </Container>
       </div>
-      <Footer />
     </div>
   );
 }
