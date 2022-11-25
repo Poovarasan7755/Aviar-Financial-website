@@ -35,7 +35,7 @@ export default function homeLoanBasics() {
           it should be an efficient, pleasant, and ultimately rewarding experience.
         </p>
         <section>
-          <h5 className="h3-color">Count On Your Real Estate Agent To :</h5>
+          <h5 className="h3-color headline">Count On Your Real Estate Agent To :</h5>
           <Row>
             <Col sm={12} md={7} lg={7}>
               <ol>

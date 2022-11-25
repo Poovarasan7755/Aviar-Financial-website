@@ -21,9 +21,7 @@ function Loanprocess() {
         </div>
       </Container>
       <Container fluid style={{ width: "90%" }}>
-        <h4 className="heading mt-5 mb-3" style={{ color: "rgb(0 155 223)" }}>
-          The Loan Process: an Overview
-        </h4>
+        <h4 className="heading mt-5 mb-3 headline">The Loan Process: an Overview</h4>
         <div>
           <p className="para">
             There is no doubt ; getting a mortgage loan is a complicated process. You wouldn't be visiting our website
@@ -35,9 +33,7 @@ function Loanprocess() {
           </p>
         </div>
         {/* Broker vs laon office */}
-        <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-          Step one: determine how much you can borrow
-        </h5>
+        <h5 className="head headline">Step one: determine how much you can borrow</h5>
         <p className="para">
           A couple of factors determine this amount. What kind of monthly payment are you looking for? And given your
           unique credit and employment history, income and debt, and goals, how much will a lender loan you? You can get
@@ -45,9 +41,7 @@ function Loanprocess() {
           different scenarios by asking a few simple questions. Because lender guidelines are fairly standard, we can
           give you a good idea of how much you can borrow after a short conversation.
         </p>
-        <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-          Step two: pre-qualify for your loan
-        </h5>
+        <h5 className="head headline">Step two: pre-qualify for your loan</h5>
         <p className="para">
           This is where Aviar Financial Services can begin saving you money. You will give us information on your
           employment, assets, and your residence history. You'll provide information on your employment, asset, and
@@ -57,7 +51,7 @@ function Loanprocess() {
           you're picking out the home that's right for you, we're busy researching the loan program that's right for
           your situation.
         </p>
-        <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
+        <h5 className="head headline">
           Step three: <span className="text-primary">apply now!</span> We make it easy
         </h5>
         <p className="para">
@@ -65,9 +59,7 @@ function Loanprocess() {
           <span className="text-primary">apply online</span>, right here on our website. After the offer has been
           accepted and you have submitted your loan application, we'll order the professional appraisal on the home.
         </p>
-        <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-          Step four: funding
-        </h5>
+        <h5 className="head headline">Step four: funding</h5>
         <p className="para">
           The agents will find an escrow/title company to handle the "funding" of the loan and closing. We'll coordinate
           with this company to make sure the papers your lender needs are in order, and you will probably likely sign
@@ -75,7 +67,7 @@ function Loanprocess() {
           Because you don't have to worry with this coordination, you can think about the move, painting, new carpet,
           and the details involved in getting a new home.
         </p>
-        <p className="para">
+        <p className="para ">
           You've answered some few questions, provided lots of information, applied online, and before you know it,
           you're deciding when to move in! We take care of the mortgage legwork so you can spend your time finding your
           new home.

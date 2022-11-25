@@ -1897,3 +1897,21 @@ section {
 .cta p {
   letter-spacing: 1px;
 }
+.fixed-image {
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 475px;
+  background-size: cover;
+}
+.getmorebutton {
+  background-color: #37405c;
+  color: white;
+  border-radius: 5px;
+  border-color: #37405c;
+}
+.getmorebutton:hover {
+  background-color: #2d395f;
+  color: whitesmoke;
+}

@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../css/css/style.scss";
 import logo from "./logo.png";
-import { AiOutlineArrowDown } from "react-icons/ai";
 import { BsArrowLeftShort } from "react-icons/bs";
+import { FiChevronDown } from "react-icons/fi";
 
 export default function HeaderNavbar() {
   // const [show, setShow] = useState(false);
@@ -44,7 +43,7 @@ export default function HeaderNavbar() {
             </li>
             <li class="dropdown">
               <Link to={{ pathname: "/loanprocess" }}>
-                <span>THE LOAN PROCESS</span> <AiOutlineArrowDown class="bi bi-chevron-down ms-2 mt-1" />
+                <span>THE LOAN PROCESS</span> <FiChevronDown class="bi bi-chevron-down ms-2 mt-1" size={25} />
               </Link>
               <ul>
                 <li>
@@ -66,7 +65,7 @@ export default function HeaderNavbar() {
                   <Link to={{ pathname: "/downpayment" }}>YOUR DOWNPAYMENT</Link>
                 </li>
                 <li class="dropdown">
-                  <a href="/closingcost">
+                  <a href="/#/closingcost">
                     <BsArrowLeftShort size={20} /> <span>CLOSING COSTS</span>
                   </a>
                   <ul>

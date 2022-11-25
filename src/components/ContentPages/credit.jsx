@@ -17,16 +17,13 @@ function Credit() {
             }}
           >
             <div className="overlay-effect">
-              {" "}
               <h2 className="name">Credit Scorings</h2>
             </div>
           </div>
         </Row>
       </Container>
       <Container fluid style={{ width: "90%" }}>
-        <h4 className="heading mt-5 mb-3" style={{ color: "rgb(0 155 223)" }}>
-          What is a credit score?
-        </h4>
+        <h4 className="heading mt-5 mb-3 headline">What is a credit score?</h4>
         <p className="para">
           Before deciding on what terms they will offer you a loan (which they base on their risk), lenders want to
           discover two things about you: your ability to pay back the loan, and{" "}

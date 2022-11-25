@@ -1,19 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import "../css/Homepage.scss";
-import {
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaInstagramSquare,
-  FaInvision,
-  FaTwitter,
-  FaLinkedinIn,
-} from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebookSquare, FaTwitter, FaLinkedinIn, FaCalendarDay, FaPeopleCarry } from "react-icons/fa";
+import { AiFillInstagram, AiOutlineHome } from "react-icons/ai";
 import { BsSkype } from "react-icons/bs";
-import { BiPhone } from "react-icons/bi";
-import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import { BiChevronRight, BiPhone } from "react-icons/bi";
+import { MdOutlineMarkEmailUnread, MdPeopleAlt, MdPolicy } from "react-icons/md";
 
 export default function Footer() {
   return (
@@ -56,19 +47,34 @@ export default function Footer() {
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/">Home</a>
+                  <i className="bx bx-chevron-right">
+                    <AiOutlineHome className="mb-1" />
+                  </i>
+                  <a href="/#/">Home</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/calculator">Calculators</a>
+                  <i className="bx bx-chevron-right">
+                    <FaCalendarDay className="mb-1" />
+                  </i>
+                  <a href="/#/calculator">Calculators</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/contactus">Contact Us</a>
+                  <i className="bx bx-chevron-right">
+                    <MdPeopleAlt className="mb-1" />
+                  </i>
+                  <a href="/#/contactus">Contact Us</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/">Terms of service</a>
+                  <i className="bx bx-chevron-right">
+                    <FaPeopleCarry className="mb-1" />
+                  </i>
+                  <a href="/#/">Terms of service</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/">Privacy policy</a>
+                  <i className="bx bx-chevron-right">
+                    <MdPolicy className="mb-1" />
+                  </i>
+                  <a href="/#/">Privacy policy</a>
                 </li>
               </ul>
             </div>
@@ -77,19 +83,34 @@ export default function Footer() {
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/loanprocess">The Loan Process</a>
+                  <i className="bx bx-chevron-right">
+                    <BiChevronRight className="mb-1 me-1" size={15} />
+                  </i>
+                  <a href="/#/loanprocess">The Loan Process</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/homeloan/basics">Who Does What ?</a>
+                  <i className="bx bx-chevron-right">
+                    <BiChevronRight className="mb-1 me-1" size={15} />
+                  </i>
+                  <a href="/#/homeloan/basics">Who Does What ?</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/calculator">Calculators</a>
+                  <i className="bx bx-chevron-right">
+                    <BiChevronRight className="mb-1 me-1" size={15} />
+                  </i>
+                  <a href="/#/calculator">Calculators</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/annualpercentage">Annual Perentage Rate</a>
+                  <i className="bx bx-chevron-right">
+                    <BiChevronRight className="mb-1 me-1" size={15} />
+                  </i>
+                  <a href="/#/annualpercentage">Annual Perentage Rate</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/#/earlypayoff">Early Payoff</a>
+                  <i className="bx bx-chevron-right">
+                    <BiChevronRight className="mb-1 me-1" size={15} />
+                  </i>
+                  <a href="/#/earlypayoff">Early Payoff</a>
                 </li>
               </ul>
             </div>
@@ -132,14 +153,14 @@ export default function Footer() {
         <div className="copyright">
           &copy; Copyright
           <strong>
-            <span> Aviar Financial Services LLC</span>
+            <span> AVIAR Financial Services LLC</span>
           </strong>
           . All Rights Reserved
         </div>
         <div className="credits">
           Designed by
           <a href="https://aviartechservices.com/" target="_blank" className="ms-1">
-            Aviar Technology Services
+            AVIAR Technology Services
           </a>
         </div>
       </div>
@@ -204,7 +225,7 @@ export default function Footer() {
     //       <Col xs={12} md={6}>
     //         <div className="footer-last-content">
     //           <text style={{ fontSize: "13px" }}>
-    //             309-750-1082 |{" "}
+    //             309-750-1082 |
     //             <a href="vijay@aviartechservices.com" style={{ fontSize: "15px" }}>
     //               vijay@aviartechservices.com
     //             </a>
@@ -224,7 +245,7 @@ export default function Footer() {
     //       </div>
     //     </Row>
     //     <div className="d-flex justify-content-end mt-3 footer-page-image">
-    //       {" "}
+    //
     //       <img
     //         alt="home"
     //         src="	https://asset-service-bucket-prod.s3.amazonaws.com/92f08dc6-86cf-4396-bc20-76d26155e94c"

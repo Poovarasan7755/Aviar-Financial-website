@@ -21,9 +21,7 @@ function Fico() {
         </div>
       </Container>
       <Container fluid style={{ width: "90%" }}>
-        <h5 className="heading mt-5" style={{ color: "rgb(0 155 223)" }}>
-          About the FICO Credit Score
-        </h5>
+        <h5 className="heading mt-5 headline">About the FICO Credit Score</h5>
         <p className="para">
           {" "}
           Since we live in an automated society, it should come as no surprise that your ability to repay your mortgage
@@ -49,24 +47,18 @@ function Fico() {
           single number: your FICO score. Credit scores range from 300 to 800. Higher is better. Most borrowers who want
           to get a mortgage loan these days score 620 or above.
         </p>
-        <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-          Your credit score greatly affects how much you pay in interest every month
-        </h5>
+        <h5 className="head headline">Your credit score greatly affects how much you pay in interest every month</h5>
         <p className="para">
           Did you know? FICO scores are used for more than just determining whether or not you qualify for a mortgage.
           Lenders give lower interest rates to individuals with higher scores.
         </p>
-        <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-          Raising your FICO score
-        </h5>
+        <h5 className="head headline">Raising your FICO score</h5>
         <p className="para">
           Unfortunately, there isn't a lot you can do to immediately improve your credit score. Some companies promise
           quick fixes, but they can't do anything different than what you can do — for free. You must, of course, remove
           any incorrect reporting from your credit report; this is the only way to quickly improve your credit score.
         </p>
-        <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-          Know your FICO
-        </h5>
+        <h5 className="head headline">Know your FICO</h5>
         <p className="para">
           Before you can improve your FICO score, you have to know your score and make certain that the reports from
           each agency are correct. Fair Isaac has created a web site ( <a href="www.myFICO.com">www.myFICO.com</a>) that
@@ -74,7 +66,7 @@ function Fico() {
           from all three credit reporting agencies. They also provide helpful information and tools that can help you
           analyze what actions might have the greatest impact on your FICO score.
         </p>
-        <p className="para">
+        <p className="para ">
           You can get a free credit report once a year from all three credit reporting agencies when you visit
           AnnualCreditReport.com. You won't get a free credit score from{" "}
           <a href="AnnualCreditReport.com">AnnualCreditReport.com</a> , but getting one is fast and inexpensive.

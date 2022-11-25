@@ -21,17 +21,13 @@ function Qualified() {
           </div>
         </Container>
         <Container fluid style={{ width: "90%" }}>
-          <h4 className="text-center mt-5 mb-2" style={{ color: "rgb(0 155 223)" }}>
-            Why Pre-Qualification is Important
-          </h4>
+          <h4 className="text-center mt-5 mb-2 headline">Why Pre-Qualification is Important</h4>
           <p className="para">
             It's important to bring in your mortgage professional early — even before you've started researching
             neighborhoods. What for? Perhaps it's difficult to understand the way we could help even before you start to
             negotiate.
           </p>
-          <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-            We Will Help You Pre-Qualify
-          </h5>
+          <h5 className="head headline">We Will Help You Pre-Qualify</h5>
           <p className="para">
             When we pre-qualify you, we help you determine the amount in mortgage payments you can afford, and the size
             of loan you can qualify for. We accomplish this by reviewing your debts and income, your employment and
@@ -43,9 +39,7 @@ function Qualified() {
             "pre-qual"), that states that we are helping you to find the ideal loan to meet your situation and that we
             are confident you will qualify for a mortgage loan for up to a certain amount.
           </p>
-          <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-            Pre-Qualification Power
-          </h5>
+          <h5 className="head headline">Pre-Qualification Power</h5>
           <p className="para">
             When you locate the house that is ideal for you, and you decide to put together an offer, being
             pre-qualified for a loan will do several things. The first is that you will know what you can afford when
@@ -55,18 +49,14 @@ function Qualified() {
             concerned that he can't trust you to qualify for your loan.Your qualifying for your needed loan amount won't
             cause them concern. You can have the clout of a buyer ready to make the deal on the spot!
           </p>
-          <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-            We help with your pre-qualification
-          </h5>
+          <h5 className="head headline">We help with your pre-qualification</h5>
           <p className="para">
             We can help you find out how much of a loan you can qualify for and the mortgage payment amount you can
             afford by helping you pre-qualify. In the process, we look at your borrowing capacity - looking at your
             earning status, available money for down payment, debts, income, and other areas. It's a quick, thorough
             process with minimal risks for papercuts.
           </p>
-          <h5 className="head" style={{ color: "rgb(0 155 223)" }}>
-            One-on-One
-          </h5>
+          <h5 className="head headline">One-on-One</h5>
           <p className="para">
             It's vital to sit down and talk with us, even though you are free to also try the helpful mortgage loan
             calculator tools on this website. For one thing, you'll need a Pre-Qualification Letter! Next, we can

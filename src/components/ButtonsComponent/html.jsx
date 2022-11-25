@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import homepage from "../img/hero-img.png";
 import img from "../img/why-us.png";
-import { BiCheckDouble, BiTachometer, BiLayer, BiPhone } from "react-icons/bi";
+import { BiCheckDouble, BiTachometer, BiLayer, BiPhone, BiPlayCircle, BiHelpCircle } from "react-icons/bi";
 import { BsDribbble } from "react-icons/bs";
-import { FiFileText } from "react-icons/fi";
-import { ProgressBar } from "react-bootstrap";
+import { FiChevronDown, FiChevronUp, FiFileText } from "react-icons/fi";
+import { Button, Col, Modal, ProgressBar } from "react-bootstrap";
 import { FaFacebookF, FaLinkedin, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { GrCircleQuestion } from "react-icons/gr";
@@ -13,6 +13,7 @@ import { BsSkype } from "react-icons/bs";
 import { MdOutlineMarkEmailUnread, MdLocationOn } from "react-icons/md";
 
 function Html() {
+  const [show, setShow] = useState(false);
   return (
     <div>
       <div>
@@ -24,9 +25,9 @@ function Html() {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <h1>Aviar Financial Services with Vijay Govindarajan</h1>
+                <h1>AVIAR Financial Services with Vijay Govindarajan</h1>
                 <h2>
-                  Aviar Financial Services LLC is committed to serving customers with respect and attention to detail.
+                  AVIAR Financial Services LLC is committed to serving customers with respect and attention to detail.
                   Our core values of Honesty, Integrity, and Transparency flow from the corporate office down to the
                   Loan Officer who will serve you. Contact Vijay today and become a believer.
                 </h2>
@@ -35,7 +36,9 @@ function Html() {
                     Get Started
                   </a>
                   <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="glightbox btn-watch-video">
-                    <i className="bi bi-play-circle"></i>
+                    <i className="bi bi-play-circle">
+                      <BiPlayCircle />
+                    </i>
                     <span>Watch Video</span>
                   </a>
                 </div>
@@ -141,8 +144,12 @@ function Html() {
                       <li>
                         <a data-bs-toggle="collapse" className="collapse" data-bs-target="#accordion-list-1">
                           <span>01</span> HOME PURCHASING
-                          <i className="bx bx-chevron-down icon-show"></i>
-                          <i className="bx bx-chevron-up icon-close"></i>
+                          <i className="bx bx-chevron-down icon-show">
+                            <FiChevronDown />
+                          </i>
+                          <i className="bx bx-chevron-up icon-close">
+                            <FiChevronUp />
+                          </i>
                         </a>
                         <div id="accordion-list-1" className="collapse show" data-bs-parent=".accordion-list">
                           <p>
@@ -155,8 +162,12 @@ function Html() {
                       <li>
                         <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" className="collapsed">
                           <span>02</span> HOME REFINANCING
-                          <i className="bx bx-chevron-down icon-show"></i>
-                          <i className="bx bx-chevron-up icon-close"></i>
+                          <i className="bx bx-chevron-down icon-show">
+                            <FiChevronDown />
+                          </i>
+                          <i className="bx bx-chevron-up icon-close">
+                            <FiChevronUp />
+                          </i>
                         </a>
                         <div id="accordion-list-2" className="collapse" data-bs-parent=".accordion-list">
                           <p>
@@ -169,8 +180,12 @@ function Html() {
                       <li>
                         <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" className="collapsed">
                           <span>03</span> We make it easy
-                          <i className="bx bx-chevron-down icon-show"></i>
-                          <i className="bx bx-chevron-up icon-close"></i>
+                          <i className="bx bx-chevron-down icon-show">
+                            <FiChevronDown />
+                          </i>
+                          <i className="bx bx-chevron-up icon-close">
+                            <FiChevronUp />
+                          </i>
                         </a>
                         <div id="accordion-list-3" className="collapse" data-bs-parent=".accordion-list">
                           <p>
@@ -355,222 +370,35 @@ function Html() {
               </div>
             </div>
           </section>
-
-          <section id="portfolio" className="portfolio">
+          <section id="pricing" className="pricing">
             <div className="container" data-aos="fade-up">
               <div className="section-title">
-                <h2>Portfolio</h2>
+                <h2>Team USA Mortgage’ core philosophy of “customers for Life”</h2>
                 <p>
-                  Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                  fugiat sit in iste officiis commodi quidem hic quas.
+                  A strong and genuine belief in the “customers for life” principal of doing business is what fuels this
+                  company. Referrals from previous customers and local real estate professionals have always delivered
+                  the majority of the company’s production. We believe in doing the job right the first time so our
+                  customers feel comfortable calling on us the next time.
                 </p>
               </div>
 
-              <ul
-                id="portfolio-flters"
-                className="d-flex justify-content-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <li data-filter="*" className="filter-active">
-                  All
-                </li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
-              </ul>
+              <img src={require("../../Image/communication.jpg")} className="fixed-image mx-auto" />
 
-              <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-                <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div className="portfolio-img">
-                    <img src={require("../img/portfolio/portfolio-1.jpg")} className="img-fluid" alt="" />
-                  </div>
-                  <div className="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>App</p>
-                    <a
-                      href=" "
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox preview-link"
-                      title="App 1"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" className="details-link" title="More Details">
-                      <i className="bx bx-link"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div className="portfolio-img">
-                    <img src={require("../img/portfolio/portfolio-2.jpg")} className="img-fluid" alt="" />
-                  </div>
-                  <div className="portfolio-info">
-                    <h4>Web 3</h4>
-                    <p>Web</p>
-                    <a
-                      href="assets/img/portfolio/portfolio-2.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox preview-link"
-                      title="Web 3"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" className="details-link" title="More Details">
-                      <i className="bx bx-link"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div className="portfolio-img">
-                    <img src={require("../img/portfolio/portfolio-3.jpg")} className="img-fluid" alt="" />
-                  </div>
-                  <div className="portfolio-info">
-                    <h4>App 2</h4>
-                    <p>App</p>
-                    <a
-                      href="assets/img/portfolio/portfolio-3.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox preview-link"
-                      title="App 2"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" className="details-link" title="More Details">
-                      <i className="bx bx-link"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div className="portfolio-img">
-                    <img src={require("../img/portfolio/portfolio-4.jpg")} className="img-fluid" alt="" />
-                  </div>
-                  <div className="portfolio-info">
-                    <h4>Card 2</h4>
-                    <p>Card</p>
-                    <a
-                      href="assets/img/portfolio/portfolio-4.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox preview-link"
-                      title="Card 2"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" className="details-link" title="More Details">
-                      <i className="bx bx-link"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div className="portfolio-img">
-                    <img src={require("../img/portfolio/portfolio-5.jpg")} className="img-fluid" alt="" />
-                  </div>
-                  <div className="portfolio-info">
-                    <h4>Web 2</h4>
-                    <p>Web</p>
-                    <a
-                      href="assets/img/portfolio/portfolio-5.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox preview-link"
-                      title="Web 2"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" className="details-link" title="More Details">
-                      <i className="bx bx-link"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div className="portfolio-img">
-                    <img src={require("../img/portfolio/portfolio-6.jpg")} className="img-fluid" alt="" />
-                  </div>
-                  <div className="portfolio-info">
-                    <h4>App 3</h4>
-                    <p>App</p>
-                    <a
-                      href="assets/img/portfolio/portfolio-6.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox preview-link"
-                      title="App 3"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" className="details-link" title="More Details">
-                      <i className="bx bx-link"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div className="portfolio-img">
-                    <img src={require("../img/portfolio/portfolio-7.jpg")} className="img-fluid" alt="" />
-                  </div>
-                  <div className="portfolio-info">
-                    <h4>Card 1</h4>
-                    <p>Card</p>
-                    <a
-                      href="assets/img/portfolio/portfolio-7.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox preview-link"
-                      title="Card 1"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" className="details-link" title="More Details">
-                      <i className="bx bx-link"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div className="portfolio-img">
-                    <img src={require("../img/portfolio/portfolio-8.jpg")} className="img-fluid" alt="" />
-                  </div>
-                  <div className="portfolio-info">
-                    <h4>Card 3</h4>
-                    <p>Card</p>
-                    <a
-                      href="assets/img/portfolio/portfolio-8.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox preview-link"
-                      title="Card 3"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" className="details-link" title="More Details">
-                      <i className="bx bx-link"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div className="portfolio-img">
-                    <img src={require("../img/portfolio/portfolio-9.jpg")} className="img-fluid" alt="" />
-                  </div>
-                  <div className="portfolio-info">
-                    <h4>Web 3</h4>
-                    <p>Web</p>
-                    <a
-                      href="assets/img/portfolio/portfolio-9.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox preview-link"
-                      title="Web 3"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" className="details-link" title="More Details">
-                      <i className="bx bx-link"></i>
-                    </a>
-                  </div>
-                </div>
+              <div className="mt-4">
+                <h5 className="headline">We Listen… then find the best loan product for you!</h5>
+                <p>
+                  Our goal in serving our customers is letting them tell us what they wish to accomplish in the best
+                  possible scenario. Then we work hard to make that scenario a reality. We are proud of our commitment
+                  to get the job done right the first time. In times of uncertainty you want a mortgage company that
+                  will fight for your best interest. At Team USA Mortgage, we are committed to doing what’s best for our
+                  customers. Let us prove it to you!
+                </p>
               </div>
+              <Col className="d-flex justify-content-center mt-4">
+                <button className="px-3 py-2 mx-auto getmorebutton" onClick={() => setShow(!show)}>
+                  Get More Details
+                </button>
+              </Col>
             </div>
           </section>
 
@@ -697,128 +525,34 @@ function Html() {
             </div>
           </section>
 
-          <section id="pricing" className="pricing">
-            <div className="container" data-aos="fade-up">
-              <div className="section-title">
-                <h2>Pricing</h2>
-                <p>
-                  Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                  fugiat sit in iste officiis commodi quidem hic quas.
-                </p>
-              </div>
-
-              {/* <div className="row">
-                <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                  <div className="box">
-                    <h3>Free Plan</h3>
-                    <h4>
-                      <sup>$</sup>0<span>per month</span>
-                    </h4>
-                    <ul>
-                      <li>
-                        <i className="bx bx-check"></i> Quam adipiscing vitae proin
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Nec feugiat nisl pretium
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Nulla at volutpat diam uteera
-                      </li>
-                      <li className="na">
-                        <i className="bx bx-x"></i> <span>Pharetra massa massa ultricies</span>
-                      </li>
-                      <li className="na">
-                        <i className="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span>
-                      </li>
-                    </ul>
-                    <a href="#" className="buy-btn">
-                      Get Started
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-                  <div className="box featured">
-                    <h3>Business Plan</h3>
-                    <h4>
-                      <sup>$</sup>29<span>per month</span>
-                    </h4>
-                    <ul>
-                      <li>
-                        <i className="bx bx-check"></i> Quam adipiscing vitae proin
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Nec feugiat nisl pretium
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Nulla at volutpat diam uteera
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Pharetra massa massa ultricies
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Massa ultricies mi quis hendrerit
-                      </li>
-                    </ul>
-                    <a href="#" className="buy-btn">
-                      Get Started
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                  <div className="box">
-                    <h3>Developer Plan</h3>
-                    <h4>
-                      <sup>$</sup>49<span>per month</span>
-                    </h4>
-                    <ul>
-                      <li>
-                        <i className="bx bx-check"></i> Quam adipiscing vitae proin
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Nec feugiat nisl pretium
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Nulla at volutpat diam uteera
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Pharetra massa massa ultricies
-                      </li>
-                      <li>
-                        <i className="bx bx-check"></i> Massa ultricies mi quis hendrerit
-                      </li>
-                    </ul>
-                    <a href="#" className="buy-btn">
-                      Get Started
-                    </a>
-                  </div>
-                </div>
-              </div> */}
-            </div>
-          </section>
-
           <section id="faq" className="faq section-bg">
             <div className="container" data-aos="fade-up">
               <div className="section-title">
-                <h2>The Loan Process: an Overview</h2>
+                <h2>The Loan Process : an Overview</h2>
                 <p>
-                  There is no doubt ; getting a mortgage loan is a complicated process. You wouldn't be visiting our
+                  There is no doubt ; Getting a mortgage loan is a complicated process. You wouldn't be visiting our
                   website if you could fill out a simple application and get the best loan funded the same day. We do
                   the heavy lifting for you, so you can concentrate on what's important — preparing to move into your
                   new home or saving money.
                 </p>
-                <p> Getting a mortgage loan involves four major steps.</p>
               </div>
 
               <div className="faq-list">
+                <p className="mb-2">
+                  {" "}
+                  <b>Getting a mortgage loan involves four major steps.</b>
+                </p>
                 <ul>
                   <li data-aos="fade-up" data-aos-delay="100">
-                    <a data-bs-toggle="collapse" className="collapse" data-bs-target="#faq-list-1">
-                      <GrCircleQuestion color="#47b2e4" className="me-2" />
-                      Step one: determine how much you can borrow <i className="bx bx-chevron-down icon-show"></i>
-                      <i className="bx bx-chevron-up icon-close"></i>
+                    <a data-bs-toggle="collapse" className="collapse " data-bs-target="#faq-list-1">
+                      <BiHelpCircle color="#47b2e4" size={23} className="me-2" />
+                      Step one: determine how much you can borrow
+                      <i className="bx bx-chevron-down icon-show">
+                        <FiChevronDown />
+                      </i>
+                      <i className="bx bx-chevron-up icon-close">
+                        <FiChevronUp />
+                      </i>
                     </a>
                     <div id="faq-list-1" className="collapse show" data-bs-parent=".faq-list">
                       <p>
@@ -834,15 +568,20 @@ function Html() {
 
                   <li data-aos="fade-up" data-aos-delay="200">
                     <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" className="collapsed">
-                      <GrCircleQuestion color="#47b2e4" className="me-2" />
-                      Step two: pre-qualify for your loan<i className="bx bx-chevron-down icon-show"></i>
-                      <i className="bx bx-chevron-up icon-close"></i>
+                      <BiHelpCircle color="#47b2e4" size={23} className="me-2" />
+                      Step two: pre-qualify for your loan
+                      <i className="bx bx-chevron-down icon-show">
+                        <FiChevronDown />
+                      </i>
+                      <i className="bx bx-chevron-up icon-close">
+                        <FiChevronUp />
+                      </i>
                     </a>
                     <div id="faq-list-2" className="collapse" data-bs-parent=".faq-list">
                       <p>
                         This is where Team USA Mortgage can begin saving you money. You will give us information on your
                         employment, assets, and your residence history. You'll provide information on your employment,
-                        asset, and residence history. We will get your credit report and score (with your permission.
+                        asset, and residence history. We will get your credit report and score with your permission.
                         After we have reviewed all this info we give you a letter of pre-qualification. Your REALTOR®
                         should use the pre-qual (as they may call it) in order to make the best offer on the home you
                         choose. The pre-qual letter gives you buying clout! While you're picking out the home that's
@@ -853,9 +592,15 @@ function Html() {
 
                   <li data-aos="fade-up" data-aos-delay="300">
                     <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" className="collapsed">
-                      <GrCircleQuestion color="#47b2e4" className="me-2" />
-                      Step three: apply now! We make it easy <i className="bx bx-chevron-down icon-show"></i>
-                      <i className="bx bx-chevron-up icon-close"></i>
+                      <BiHelpCircle color="#47b2e4" size={23} className="me-2" />
+                      Step three: apply now! We make it easy{" "}
+                      <i className="bx bx-chevron-down icon-show">
+                        {" "}
+                        <FiChevronDown />
+                      </i>
+                      <i className="bx bx-chevron-up icon-close">
+                        <FiChevronUp />
+                      </i>
                     </a>
                     <div id="faq-list-3" className="collapse" data-bs-parent=".faq-list">
                       <p>
@@ -868,10 +613,14 @@ function Html() {
 
                   <li data-aos="fade-up" data-aos-delay="400">
                     <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" className="collapsed">
-                      <GrCircleQuestion color="#47b2e4" className="me-2" />
+                      <BiHelpCircle color="#47b2e4" size={23} className="me-2" />
                       Step four: funding
-                      <i className="bx bx-chevron-down icon-show"></i>
-                      <i className="bx bx-chevron-up icon-close"></i>
+                      <i className="bx bx-chevron-down icon-show">
+                        <FiChevronDown />
+                      </i>
+                      <i className="bx bx-chevron-up icon-close">
+                        <FiChevronUp />
+                      </i>
                     </a>
                     <div id="faq-list-4" className="collapse" data-bs-parent=".faq-list">
                       <p>
@@ -936,13 +685,6 @@ function Html() {
                       </p>
                     </div>
 
-                    {/* <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                      frameBorder="0"
-                      style={{ border: "0", width: " 100%", height: "290px" }}
-                      allowFullScreen
-                      target="_parent"
-                    ></iframe> */}
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d98980.77958290937!2d-86.60188667868584!3d39.17132507403884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbg!4v1669109434552!5m2!1sen!2sbg"
                       frameBorder="0"
@@ -992,6 +734,51 @@ function Html() {
           <i className="bi bi-arrow-up-short"></i>
         </a> */}
       </div>
+      <Modal
+        show={show}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        onHide={() => setShow(!show)}
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">AVIAR Financial Services</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="p-sm-3 p-md-5 p-lg-5">
+          <div>
+            <h4 style={{ color: "#37517e" }}>Low rates and fees through knowledge and technology</h4>
+            <p>
+              We use the most advanced technology available to close loans quickly, and at low cost. Team USA Mortgage
+              combines the use of the internet along with advanced processing software and automated underwriting
+              systems to find the best loan program for our customers. We’ve essentially taken the mystery out of
+              approving and closing a home loan.
+            </p>
+          </div>
+          <div>
+            <h4 style={{ color: "#37517e" }}>Not just for those with perfect credit</h4>
+            <p>
+              Team USA Mortgage is dedicated in the pursuit of offering competitive rates and terms for our “A” credit
+              customers. We are also just as driven to provide customers who may have had credit problems in the past
+              with the opportunity to obtain a mortgage. Just ask about our low down payment purchase and FHA programs.
+            </p>
+          </div>
+          <div>
+            <h4 style={{ color: "#37517e" }}>We Listen… then find the best loan product for you!</h4>
+            <p>
+              Our goal in serving our customers is letting them tell us what they wish to accomplish in the best
+              possible scenario. Then we work hard to make that scenario a reality. We are proud of our commitment to
+              get the job done right the first time. In times of uncertainty you want a mortgage company that will fight
+              for your best interest. At Team USA Mortgage, we are committed to doing what’s best for our customers. Let
+              us prove it to you!
+            </p>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={() => setShow(false)} className="px-4">
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }

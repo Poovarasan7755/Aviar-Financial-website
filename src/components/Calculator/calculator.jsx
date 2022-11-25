@@ -20,7 +20,7 @@ function Calculator() {
         </div>
       </div>
       <div className="heading_1">
-        <h5 style={{ color: "#2ea3f2" }}>FIND OUT HOW MUCH YOU CAN AFFORD</h5>
+        <h5 className="headline">FIND OUT HOW MUCH YOU CAN AFFORD</h5>
         <p className="para_1">The following online calculators serve as helpful tools during the mortgage process.</p>
       </div>
       <Container fluid style={{ width: "95%" }}>

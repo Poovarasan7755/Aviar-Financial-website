@@ -19,7 +19,7 @@ function taxcost() {
           </div>
         </Container>
         <Container fluid style={{ width: "90%" }}>
-          <h4 className=" mt-5 " style={{ color: "rgb(0 155 223)" }}>
+          <h4 className=" mt-5 headline">
             Property Taxes
           </h4>
           <p className="para ml-5 ">
@@ -28,7 +28,7 @@ function taxcost() {
             will be occupying the property. Likewise, if the taxes have not yet been paid, the seller typically
             reimburses the buyer for the period in which the seller occupied the property.
           </p>
-          <h4 className=" ml-5" style={{ color: "rgb(0 155 223)" }}>
+          <h4 className=" ml-5headline">
             Transfer Taxes and Recording Fees
           </h4>
           <p className="para ml-5">

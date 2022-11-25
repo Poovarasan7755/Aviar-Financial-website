@@ -204,9 +204,9 @@ function StepOne() {
 
             <Row style={{ margin: "100px 30px 10px 30px" }}>
               <Col className="d-flex justify-content-end">
-                <Button className="px-4 me-3 button-Style save-btn-color">SAVE</Button>
+                <Button className="px-4 me-3 button-Style save-btn-color">Save</Button>
                 <Button className="px-4 button-Style next-btn-color" onClick={() => secondComponent()}>
-                  NEXT
+                  Next
                 </Button>
               </Col>
             </Row>

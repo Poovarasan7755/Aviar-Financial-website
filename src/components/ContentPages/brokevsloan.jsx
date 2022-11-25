@@ -22,7 +22,7 @@ function Brokevsloan() {
         </Row>
       </Container>
       <Container fluid style={{ width: "90%" }}>
-        <h4 className="heading mt-5 mb-3" style={{ color: "rgb(0 155 223)" }}>
+        <h4 className="heading mt-5 mb-3 headline">
           Mortgage Broker or Loan Officer?
         </h4>
         <p className="para">
@@ -30,7 +30,7 @@ function Brokevsloan() {
           confuse them as both will glean the same result: a new home. But as you begin the application process, it will
           help if you recognize the ways they differ.
         </p>
-        <h4 className="head" style={{ color: "rgb(0 155 223)" }}>
+        <h4 className="head headline">
           About Mortgage Brokers
         </h4>
         <p className="para">
@@ -42,7 +42,7 @@ function Brokevsloan() {
           it to various lenders. Your mortgage broker then assists your work with the lender chosen until closing. At
           closing, the broker's commission is paid by either the lender or borrower, your choice.
         </p>
-        <h4 className="head" style={{ color: "rgb(0 155 223)" }}>
+        <h4 className="head headline">
           What is a Loan Officer?
         </h4>
         <p className="para">

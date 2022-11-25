@@ -50,9 +50,10 @@
 }
 .next-btn-color {
   background-color: #32527b !important;
+  border-color: #32527b !important;
 }
 .next-btn-color:hover {
-  background-color: #0656be !important;
+  background-color: #113f7a !important;
   transform: scale(1.1);
 }
 @media only Screen and (max-width: 362px) {
@@ -74,5 +75,8 @@
   color: #fff;
 }
 .h3-color {
-  color: rgb(0, 155, 223);
+  color: #37517e;
+}
+.headline {
+  color: #4e6b9d;
 }
