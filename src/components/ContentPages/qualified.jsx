@@ -71,7 +71,7 @@ function Qualified() {
             . We answer questions about the loan process every day.
           </p>
           <div className="homepage-button mt-5 mb-5">
-            <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/step-1")}>
+            <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/forms/step-1")}>
               {" "}
               Apply Now
             </Button>

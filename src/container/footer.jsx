@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="footer-top">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6 footer-contact">
+            <div className="col-lg-3 col-md-6 col-sm-6 footer-contact">
               <h4>Aviar Financial Service LLC </h4>
               <p>
                 2103 Eastland Dr <br />
@@ -43,7 +43,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="col-lg-3 col-md-6 footer-links">
+            <div className="col-lg-3 col-md-6 col-sm-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
                 <li>
@@ -79,7 +79,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="col-lg-3 col-md-6 footer-links">
+            <div className="col-lg-3 col-md-6 col-sm-6 footer-links">
               <h4>Our Services</h4>
               <ul>
                 <li>
@@ -115,7 +115,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="col-lg-3 col-md-6 footer-links">
+            <div className="col-lg-3 col-md-6 col-sm-6 footer-links">
               <h4>Our Social Networks</h4>
               <p style={{ fontSize: "x-small" }}>
                 “STATE OF ILLINOIS COMMUNITY REINVESTMENT NOTICE The Department of Financial and Professional Regulation

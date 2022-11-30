@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Form, FormGroup, Col, Button, Row } from "react-bootstrap";
 
 import "../../css/Form.scss";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Select from "react-select";
 import Sidebar from "../../container/Sidebar";
 
@@ -117,8 +117,12 @@ const Options = [
   },
 ];
 
-function StepOne() {
+function StepOne(props) {
+  console.log("props", props?.location?.state);
   const navigate = useNavigate();
+  const location = useLocation();
+  const data = location.state;
+  console.log("data", data);
 
   const [home, setHome] = useState(false);
 
@@ -134,15 +138,13 @@ function StepOne() {
   };
 
   const secondComponent = () => {
-    navigate("/step-2", { state: { type: home } });
+    navigate("/forms/step-2", { state: { type: home } });
   };
 
   return (
     <Container fluid>
       <div className="site-maincontent home-content open">
         <div style={{ minHeight: "calc(100vh - 200px)" }}>
-          <Sidebar />
-
           <Form onSubmit={() => alert("ok")}>
             <div className="px-4">
               <div className="d-flex justify-content-center mt-3">

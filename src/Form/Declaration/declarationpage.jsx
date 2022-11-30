@@ -9,7 +9,6 @@ export default function Declarationpage() {
   return (
     <div className="site-maincontent home-content open">
       <div style={{ minHeight: "calc(100vh - 200px)" }}>
-        <Sidebar />
         <Container>
           <Form>
             <div className="px-4">
@@ -175,7 +174,7 @@ export default function Declarationpage() {
           </Col>
           <Col className="d-flex justify-content-end">
             <Button className="button-Style save-btn-color me-3">Save</Button>
-            <Button className="button-Style next-btn-color " onClick={() => navigate("/summary")}>
+            <Button className="button-Style next-btn-color " onClick={() => navigate("/forms/summary")}>
               Next
             </Button>
           </Col>

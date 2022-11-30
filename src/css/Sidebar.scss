@@ -3,7 +3,7 @@
   background-color: #dbd3e973;
   height: 100vh;
   position: fixed;
-  top: 92px;
+  top: 94px;
   z-index: 2;
   left: 0;
 }
@@ -85,6 +85,7 @@
   text-decoration: none;
   background-color: white !important;
   border-radius: 8px !important;
+  border-bottom-style: solid;
 }
 
 .sidebarcontent.open .main-nav-active-style:hover {

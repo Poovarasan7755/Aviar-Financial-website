@@ -11,8 +11,6 @@ function StepThree() {
     <div className="site-maincontent home-content open">
       <div style={{ minHeight: "calc(100vh - 200px)" }}>
         <Container className="mt-3">
-          <Sidebar />
-
           <Form>
             <div className="px-3">
               <div className=" mb-5">
@@ -64,15 +62,14 @@ function StepThree() {
               </Col>
               <Col className="d-flex justify-content-end">
                 <Button className="button-Style save-btn-color me-3">Save</Button>
-                <Button className="button-Style next-btn-color" onClick={() => navigate("/step-4")}>
+                <Button className="button-Style next-btn-color" onClick={() => navigate("/forms/step-4")}>
                   Next
                 </Button>
               </Col>
             </Row>
           </Form>
         </Container>
-        <Container fluid>
-        </Container>
+        <Container fluid></Container>
       </div>
     </div>
   );

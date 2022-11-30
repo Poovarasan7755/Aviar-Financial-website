@@ -10,7 +10,6 @@ function Homepage() {
   const navigate = useNavigate();
   return (
     <div>
-      {" "}
       <Container fluid>
         <div
           className="color mt-5"
@@ -19,7 +18,6 @@ function Homepage() {
           }}
         >
           <div className="overlay-effect">
-            {" "}
             <h2 className="name">Vijay Govindarajan</h2>
           </div>
         </div>
@@ -111,13 +109,12 @@ function Homepage() {
         </Container>
         <Container fluid style={{ width: "95%" }}>
           <div className="mt-4">
-            {" "}
             <h5 style={{ color: "rgb(0 113 174)" }}>Get the loan you need</h5>
             <p>
-              Getting a loan doesn’t have to be a complicated process filled with headaches and paperwork. At Team USA
-              Mortgage, we’re not just committed to finding you the perfect loan, we’re committed to making sure that
-              the whole process is 100% pain–and hassle–free. We can qualify you in five minutes with our loan-by-phone
-              program.
+              Getting a loan doesn’t have to be a complicated process filled with headaches and paperwork. At AVIAR
+              Financial Services Mortgage, we’re not just committed to finding you the perfect loan, we’re committed to
+              making sure that the whole process is 100% pain–and hassle–free. We can qualify you in five minutes with
+              our loan-by-phone program.
             </p>
           </div>
           <Row style={{ backgroundColor: "aliceblue" }} className="mt-4 px-4 py-4">
@@ -137,11 +134,10 @@ function Homepage() {
                 </h4>
                 <p>Branch Manager</p>
                 <p>
-                  {" "}
                   <a href="vijay@aviartechservices.com">vijay@aviartechservices.com</a>
                 </p>
                 <p>
-                  Cell: <a href="309-750-1082">309-750-1082</a>{" "}
+                  Cell: <a href="309-750-1082">309-750-1082</a>
                 </p>
                 <p>NMLS #: 1860404</p>
               </div>
@@ -157,7 +153,7 @@ function Homepage() {
               sure you’re informed and updated every step of the way.
             </p>
             <h5 className="mt-4" style={{ color: "rgb(0 113 174)" }}>
-              Team USA Mortgage’ core philosophy of “customers for Life”
+              AVIAR Financial Services’ core philosophy of “customers for Life”
             </h5>
             <p>
               A strong and genuine belief in the “customers for life” principal of doing business is what fuels this
@@ -171,18 +167,19 @@ function Homepage() {
             <h5 style={{ color: "rgb(0 113 174)" }}>Low rates and fees through knowledge and technology</h5>
 
             <p>
-              We use the most advanced technology available to close loans quickly, and at low cost. Team USA Mortgage
-              combines the use of the internet along with advanced processing software and automated underwriting
-              systems to find the best loan program for our customers. We’ve essentially taken the mystery out of
-              approving and closing a home loan.
+              We use the most advanced technology available to close loans quickly, and at low cost. AVIAR Financial
+              Services combines the use of the internet along with advanced processing software and automated
+              underwriting systems to find the best loan program for our customers. We’ve essentially taken the mystery
+              out of approving and closing a home loan.
             </p>
             <h5 className="mt-4" style={{ color: "rgb(0 113 174)" }}>
               Not just for those with perfect credit
             </h5>
             <p>
-              Team USA Mortgage is dedicated in the pursuit of offering competitive rates and terms for our “A” credit
-              customers. We are also just as driven to provide customers who may have had credit problems in the past
-              with the opportunity to obtain a mortgage. Just ask about our low down payment purchase and FHA programs.
+              AVIAR Financial Services is dedicated in the pursuit of offering competitive rates and terms for our “A”
+              credit customers. We are also just as driven to provide customers who may have had credit problems in the
+              past with the opportunity to obtain a mortgage. Just ask about our low down payment purchase and FHA
+              programs.
             </p>
             <h5 className="mt-4" style={{ color: "rgb(0 113 174)" }}>
               We Listen… then find the best loan product for you!
@@ -191,8 +188,8 @@ function Homepage() {
               Our goal in serving our customers is letting them tell us what they wish to accomplish in the best
               possible scenario. Then we work hard to make that scenario a reality. We are proud of our commitment to
               get the job done right the first time. In times of uncertainty you want a mortgage company that will fight
-              for your best interest. At Team USA Mortgage, we are committed to doing what’s best for our customers. Let
-              us prove it to you!
+              for your best interest. At AVIAR Financial Services, we are committed to doing what’s best for our
+              customers. Let us prove it to you!
             </p>
           </div>
           <div
@@ -253,9 +250,9 @@ function Homepage() {
                     <b>REGISTER AND APPLY</b>
                   </Card.Title>
                   <Card.Text>Fill in your details and get instant approval on the loan amount</Card.Text>
-                </Card.Body>{" "}
+                </Card.Body>
               </div>
-            </Col>{" "}
+            </Col>
             <Col md={4}>
               <div>
                 <div className="cardimage">
@@ -267,13 +264,12 @@ function Homepage() {
                   </Card.Title>
 
                   <Card.Text>Fill in your details and get instant approval on the loan amount</Card.Text>
-                </Card.Body>{" "}
+                </Card.Body>
               </div>
-            </Col>{" "}
+            </Col>
             <Col md={4}>
               <div>
                 <div className="cardimage">
-                  {" "}
                   <Card.Img
                     variant="top"
                     src="https://www.mobikwik.com/assets/images/lending/moneyhand.png"
@@ -286,19 +282,17 @@ function Homepage() {
                     <b>BOOST YOUR FINANCES</b>
                   </Card.Title>
                   <Card.Text>The amount will be credited to your wallet in less than 5 minutes</Card.Text>
-                </Card.Body>{" "}
+                </Card.Body>
               </div>
             </Col>
           </Row>
 
           <hr />
           <div className="homepage-button mt-5">
-            {" "}
             <h5>Apply now for a better mortgage experience through Encompass</h5>
           </div>
           <div className="homepage-button mt-3 mb-5">
-            <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/step-1")}>
-              {" "}
+            <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/forms/step-1")}>
               Apply Now
             </Button>
           </div>

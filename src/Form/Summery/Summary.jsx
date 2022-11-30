@@ -16,7 +16,6 @@ export default function Summary() {
   return (
     <div className="site-maincontent home-content open">
       <div style={{ minHeight: "calc(100vh - 200px)" }}>
-        <Sidebar />
         <Container>
           <Form className="px-3">
             <h3 className="mt-3" style={{ color: "#0bf" }}>
@@ -24,7 +23,6 @@ export default function Summary() {
             </h3>
             <h5 className="mt-5 mb-3">Summary</h5>
             <div className="summary-page">
-              {" "}
               <Button onClick={() => ChangeValue()}>Collapse All</Button>
             </div>
             <hr className="mt-4 mb-4" />
@@ -36,7 +34,7 @@ export default function Summary() {
                     <text className="mt-4">Purpose of your Loan</text>
                   </Col>
                   <Col md={6} className="  summary-page">
-                    <Button className="px-4" onClick={() => navigate("/step-1")}>
+                    <Button className="px-4" onClick={() => navigate("/forms/step-1")}>
                       Edit
                     </Button>
                   </Col>
@@ -57,8 +55,7 @@ export default function Summary() {
                   </Col>
                   <Col md={6} className="  summary-page ">
                     <div>
-                      {" "}
-                      <Button className="px-4" onClick={() => navigate("/step-3")}>
+                      <Button className="px-4" onClick={() => navigate("/forms/step-3")}>
                         Edit
                       </Button>
                     </div>
@@ -68,7 +65,7 @@ export default function Summary() {
                 <h5>Assets</h5>
                 <div className="  summary-page ">
                   {" "}
-                  <Button className="px-4" onClick={() => navigate("/asset")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/asset")}>
                     Edit
                   </Button>
                 </div>
@@ -77,7 +74,7 @@ export default function Summary() {
                 <h5>Employment and Income</h5>
                 <div className="  summary-page ">
                   {" "}
-                  <Button className="px-4" onClick={() => navigate("/employement-and-income-details")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/employement-and-income-details")}>
                     Edit
                   </Button>
                 </div>
@@ -87,7 +84,7 @@ export default function Summary() {
                 <h5>Liabilities</h5>
                 <div className="  summary-page ">
                   {" "}
-                  <Button className="px-4" onClick={() => navigate("/liabilities")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/liabilities")}>
                     Edit
                   </Button>
                 </div>
@@ -96,7 +93,7 @@ export default function Summary() {
                 <h5>Declarations</h5>
                 <div className="  summary-page ">
                   {" "}
-                  <Button className="px-4" onClick={() => navigate("/declaration")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/declaration")}>
                     Edit
                   </Button>
                 </div>
@@ -108,7 +105,7 @@ export default function Summary() {
               <div>
                 <h5>Loan Details</h5>
                 <div className="  summary-page ">
-                  <Button className="px-4" onClick={() => navigate("/step-1")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/step-1")}>
                     Edit
                   </Button>
                 </div>
@@ -136,7 +133,7 @@ export default function Summary() {
                 <hr className="mt-4 mb-4" />
                 <h5>Personal Information</h5>
                 <div className="  summary-page ">
-                  <Button className="px-4" onClick={() => navigate("/step-3")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/step-3")}>
                     Edit
                   </Button>
                 </div>
@@ -227,7 +224,7 @@ export default function Summary() {
                 <hr className="mt-4 mb-4" />
                 <h5>Assets</h5>
                 <div className="  summary-page ">
-                  <Button className="px-4" onClick={() => navigate("/asset")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/asset")}>
                     Edit
                   </Button>{" "}
                 </div>
@@ -235,7 +232,7 @@ export default function Summary() {
                 <hr className="mt-4 mb-4" />
                 <h5>Employment and Income</h5>
                 <div className="  summary-page ">
-                  <Button className="px-4" onClick={() => navigate("/employement-and-income-details")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/employement-and-income-details")}>
                     Edit
                   </Button>
                 </div>
@@ -293,7 +290,7 @@ export default function Summary() {
                 <hr className="mt-4 mb-4" />
                 <h5>Liabilities</h5>
                 <div className="  summary-page ">
-                  <Button className="px-4" onClick={() => navigate("/liabilities")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/liabilities")}>
                     Edit
                   </Button>
                 </div>
@@ -301,7 +298,7 @@ export default function Summary() {
                 <hr className="mt-4 mb-4" />
                 <h3>Declarations</h3>
                 <div className="  summary-page ">
-                  <Button className="px-4" onClick={() => navigate("/declaration")}>
+                  <Button className="px-4" onClick={() => navigate("/forms/declaration")}>
                     Edit
                   </Button>
                 </div>
@@ -439,7 +436,7 @@ export default function Summary() {
           </Col>
           <Col className="d-flex justify-content-end">
             <Button className="button-Style save-btn-color me-3">Save</Button>
-            <Button className="button-Style next-btn-color " onClick={() => navigate("/summary")}>
+            <Button className="button-Style next-btn-color " onClick={() => navigate("/forms/summary")}>
               Next
             </Button>
           </Col>

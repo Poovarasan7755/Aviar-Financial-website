@@ -5,7 +5,6 @@ const Login = lazy(() => import("../components/login"));
 const Username = lazy(() => import("../components/usernameforgot"));
 const Password = lazy(() => import("../components/passwordforgot"));
 const Signup = lazy(() => import("../components/Signup/signup"));
-const Application = lazy(() => import("../components/application"));
 const HeaderNavbar = lazy(() => import("../container/headerNavbar"));
 const Loanprocess = lazy(() => import("../components/ContentPages/loanprocess"));
 const Credit = lazy(() => import("../components/ContentPages/credit"));
@@ -28,7 +27,7 @@ const Debtconsolidation = lazy(() => import("../components/Calculator/debtconsol
 const Taxsaving = lazy(() => import("../components/Calculator/taxsaving"));
 const Footer = lazy(() => import("../Form"));
 const ContactUs = lazy(() => import("../components/ContactUs"));
-const Index = lazy(() => import("../components/application"));
+// const Index = lazy(() => import("../components/application"));
 const AssetPageOne = lazy(() => import("../Form/Assets/StepOne"));
 const Employement = lazy(() => import("../Form/Employement-and-income/StepOne"));
 const Liabilities = lazy(() => import("../Form/Liabilities/Liability"));
@@ -54,7 +53,6 @@ export {
   Username,
   Password,
   Signup,
-  Application,
   HeaderNavbar,
   Loanprocess,
   Credit,
@@ -77,7 +75,6 @@ export {
   Taxsaving,
   Footer,
   ContactUs,
-  Index,
   AssetPageOne,
   Employement,
   Liabilities,

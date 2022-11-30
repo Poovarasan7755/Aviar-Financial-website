@@ -147,7 +147,6 @@ const Method = [
 
 export default function StepTwo(props) {
   const location = useLocation();
-  console.log("location....", location.state.type);
   const [cashValue, setCashvalue] = useState(location.state.type);
   const navigate = useNavigate();
   const [view, setView] = useState(false);
@@ -160,7 +159,6 @@ export default function StepTwo(props) {
 
   return (
     <div>
-      <Sidebar />
       <div className="site-maincontent home-content open">
         <div style={{ minHeight: "calc(100vh - 200px)" }}>
           <Container fluid>
@@ -233,7 +231,6 @@ export default function StepTwo(props) {
                       </Form.Group>
                     </Col>
                   </Row>
-                  {console.log("prototype", protoType)}
                   {protoType === "Single Family Resitence" ||
                   protoType === "Single Family Resitence with Home Owners Association" ||
                   protoType === "2+ Unit" ||
@@ -364,7 +361,6 @@ export default function StepTwo(props) {
                       </Form.Group>
                     </Col>
                   </Row>
-                  {console.log("prototype", protoType)}
                   {protoType === "Single Family Resitence" ||
                   protoType === "Single Family Resitence with Home Owners Association" ||
                   protoType === "2+ Unit" ||
@@ -399,7 +395,7 @@ export default function StepTwo(props) {
 
           <Col className="d-flex justify-content-end">
             <Button className="button-Style save-btn-color me-3">Save</Button>
-            <Button className="button-Style next-btn-color" onClick={() => navigate("/step-3")}>
+            <Button className="button-Style next-btn-color" onClick={() => navigate("/forms/step-3")}>
               Next
             </Button>
           </Col>

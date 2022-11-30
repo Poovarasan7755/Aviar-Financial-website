@@ -22,17 +22,13 @@ function Brokevsloan() {
         </Row>
       </Container>
       <Container fluid style={{ width: "90%" }}>
-        <h4 className="heading mt-5 mb-3 headline">
-          Mortgage Broker or Loan Officer?
-        </h4>
+        <h4 className="heading mt-5 mb-3 headline">Mortgage Broker or Loan Officer?</h4>
         <p className="para">
           Either a mortgage broker or a loan officer can assist you when you apply for a mortgage loan. It's common to
           confuse them as both will glean the same result: a new home. But as you begin the application process, it will
           help if you recognize the ways they differ.
         </p>
-        <h4 className="head headline">
-          About Mortgage Brokers
-        </h4>
+        <h4 className="head headline">About Mortgage Brokers</h4>
         <p className="para">
           A mortgage broker is a person or company that serves as an independent agent for both the mortgage loan
           borrower and the lender. Acting as a facilitator between you and your lender, your mortgage broker can match
@@ -42,9 +38,7 @@ function Brokevsloan() {
           it to various lenders. Your mortgage broker then assists your work with the lender chosen until closing. At
           closing, the broker's commission is paid by either the lender or borrower, your choice.
         </p>
-        <h4 className="head headline">
-          What is a Loan Officer?
-        </h4>
+        <h4 className="head headline">What is a Loan Officer?</h4>
         <p className="para">
           The biggest difference between a mortgage broker and a loan officer is that the latter works for a lending
           institution (a bank, credit union, or others) to process loans only originated from that institution. They may
@@ -64,7 +58,7 @@ function Brokevsloan() {
           . We answer questions about the loan process every day.
         </p>
         <div className="homepage-button mt-5 mb-5">
-          <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/step-1")}>
+          <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/forms/step-1")}>
             {" "}
             Apply Now
           </Button>

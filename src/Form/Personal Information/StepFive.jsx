@@ -54,7 +54,6 @@ function StepFive() {
   return (
     <div className="site-maincontent home-content open">
       <div style={{ minHeight: "calc(100vh - 200px)" }}>
-        <Sidebar />
         <Container>
           <Form onSubmit={handleSubmit}>
             <div className="px-3">
@@ -276,7 +275,7 @@ function StepFive() {
               </Col>
               <Col className="d-flex justify-content-end">
                 <Button className="button-Style save-btn-color me-3">Save</Button>
-                <Button className="button-Style next-btn-color " onClick={() => navigate("/asset")}>
+                <Button className="button-Style next-btn-color " onClick={() => navigate("/forms/asset")}>
                   Next
                 </Button>
               </Col>

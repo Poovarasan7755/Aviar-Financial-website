@@ -84,7 +84,7 @@ export default function HeaderNavbar() {
             </li>
             <li class="dropdown">
               <Link to={{ pathname: "/calculator" }}>
-                <span>CALCULATORS</span> <i class="bi bi-chevron-down"></i>
+                <span>CALCULATORS</span> <FiChevronDown class="bi bi-chevron-down ms-2 mt-1" size={25} />
               </Link>
               <ul>
                 <li>

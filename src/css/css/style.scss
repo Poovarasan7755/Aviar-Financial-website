@@ -1909,9 +1909,15 @@ section {
   background-color: #37405c;
   color: white;
   border-radius: 5px;
-  border-color: #37405c;
+  border-color: #757d95;
 }
 .getmorebutton:hover {
   background-color: #2d395f;
   color: whitesmoke;
+}
+.loan-footer {
+  margin-left: 225px;
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
 }

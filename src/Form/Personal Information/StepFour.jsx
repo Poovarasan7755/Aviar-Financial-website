@@ -43,7 +43,7 @@ function StepFour() {
   const [show, setShow] = useState(false);
 
   const submitForm = (values) => {
-    navigate("/step-5");
+    navigate("/forms/step-5");
   };
 
   const [formValues, setFormValues] = useState([{ firstName: "", lastName: "", middleName: "" }]);
@@ -72,7 +72,6 @@ function StepFour() {
   return (
     <div className="site-maincontent home-content open">
       <div style={{ minHeight: "calc(100vh - 200px)" }}>
-        <Sidebar />
         <Formik initialValues={initialValues} validationSchema={SignInSchema} onSubmit={(values) => submitForm(values)}>
           {(formik) => {
             const { values, handleChange, handleSubmit, handleBlur, isValid } = formik;

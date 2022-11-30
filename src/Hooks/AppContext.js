@@ -4,7 +4,6 @@ import Services from "../Services";
 export const AppContextProvider = ({ children }) => {
   const login = (payload) => {
     //payload = {email,password}
-    console.log("payload context", payload);
     Services.login(payload)
       .then((res) => {
         console.log("res", res);
@@ -15,18 +14,23 @@ export const AppContextProvider = ({ children }) => {
       });
   };
   const logOut = () => {};
+  const link = false;
+  const [sidebar, setSidebar] = useState(false);
 
   const memoedValue = useMemo(
     () => ({
       login,
       logOut,
+      link,
+      sidebar,
+      setSidebar,
     }),
     []
   );
   return <AppContext.Provider value={memoedValue}>{children}</AppContext.Provider>;
 };
 
-export function useAppContext() {
+export function useAppContext(props) {
   const ctx = useContext(AppContext);
   return {
     ...ctx,

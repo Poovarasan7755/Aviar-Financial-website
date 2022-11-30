@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Button, Form, Col, Row } from "react-bootstrap";
 import "../../css/Form.scss";
 import Select from "react-select";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import { values } from "../UnitType.js";
 import { states } from "../state.js";
@@ -86,9 +86,13 @@ const propertyType = [
   { label: "Other", value: "Other" },
 ];
 
-function AssetPageOne() {
+function AssetPageOne(props) {
+  console.log("props :>> ", props);
   const [data, setData] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const aaa = location.state;
+  console.log("aaa :>> ", aaa);
   const [formValues, setFormValues] = useState([
     {
       address: "",
@@ -144,7 +148,6 @@ function AssetPageOne() {
   return (
     <div className="site-maincontent home-content open">
       <div style={{ minHeight: "calc(100vh - 200px)" }}>
-        <Sidebar />
         <Container>
           <Form onSubmit={handleSubmit}>
             <div className="px-3">
@@ -361,7 +364,7 @@ function AssetPageOne() {
                 <Button className="button-Style save-btn-color me-3">Save</Button>
                 <Button
                   className="button-Style next-btn-color "
-                  onClick={() => navigate("/employement-and-income-details")}
+                  onClick={() => navigate("/forms/employement-and-income-details")}
                 >
                   Next
                 </Button>

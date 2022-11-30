@@ -4,7 +4,8 @@ import { AppContextProvider } from "./Hooks/AppContext";
 import "./App.css";
 import "./css/css/style.scss";
 import Routers from "./Routes/routes";
-function App() {
+function App(props) {
+  console.log("props App:>> ", props);
   return (
     <>
       <AppContextProvider>
