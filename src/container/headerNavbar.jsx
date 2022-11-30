@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/css/style.scss";
 import logo from "./logo.png";
-import { BsArrowLeftShort } from "react-icons/bs";
+import { BsArrowLeftShort, BsList } from "react-icons/bs";
 import { FiChevronDown } from "react-icons/fi";
+import { useState } from "react";
+import { MdClose } from "react-icons/md";
 
 export default function HeaderNavbar() {
+  const [show, setShow] = useState(false);
   // const [show, setShow] = useState(false);
   // const [score, setScore] = useState(false);
 
@@ -23,29 +26,30 @@ export default function HeaderNavbar() {
   // };
 
   return (
-    <header id="header" class="fixed-top header-scrolled">
-      <div class="container d-flex align-items-center">
-        {/* <h1 class="logo me-auto">
+    <header id="header" className="fixed-top header-scrolled">
+      <div className="container d-flex align-items-center">
+        {/* <h1 className="logo me-auto">
           <a href="index.html">Arsha</a>
         </h1> */}
         {/* <!-- Uncomment below if you prefer to use an image logo --> */}
         {/* <Navbar.Brand href="/#/index">
           <img src={logo} width="180" height="43" className="d-inline-block align-top" alt="Logo" />
         </Navbar.Brand> */}
-        <a href="/" class="logo me-auto">
-          <img src={logo} alt="" class="img-fluid" />
+        <a href="/" className="logo me-auto">
+          <img src={logo} alt="logo" className="img-fluid" />
         </a>
 
-        <nav id="navbar" class="navbar">
+        {/* <nav id="navbar" className="navbar-mobile"> */}
+        <nav id="navbar" className={show ? `navbar navbar-mobile` : `navbar `}>
           <ul>
             <li>
               <Link to={{ pathname: "/" }}>YOUR MORTGAGE SPECIALIST</Link>
             </li>
-            <li class="dropdown">
+            <li className="dropdown">
               <Link to={{ pathname: "/loanprocess" }}>
-                <span>THE LOAN PROCESS</span> <FiChevronDown class="bi bi-chevron-down ms-2 mt-1" size={25} />
+                <span>THE LOAN PROCESS</span> <FiChevronDown className="bi bi-chevron-down ms-2 mt-1" size={25} />
               </Link>
-              <ul>
+              <ul className= "dropdown-active" >
                 <li>
                   <Link to={{ pathname: "/homeloan/basics" }}>WHO DOES WHAT ?</Link>
                 </li>
@@ -64,11 +68,11 @@ export default function HeaderNavbar() {
                 <li>
                   <Link to={{ pathname: "/downpayment" }}>YOUR DOWNPAYMENT</Link>
                 </li>
-                <li class="dropdown">
+                <li className="dropdown">
                   <a href="/#/closingcost">
                     <BsArrowLeftShort size={20} /> <span>CLOSING COSTS</span>
                   </a>
-                  <ul>
+                  <ul className="dropdown-active">
                     <li>
                       <Link to={{ pathname: "/taxcost" }}>Tax Closing costs</Link>
                     </li>
@@ -82,11 +86,11 @@ export default function HeaderNavbar() {
                 </li>
               </ul>
             </li>
-            <li class="dropdown">
+            <li className="dropdown">
               <Link to={{ pathname: "/calculator" }}>
-                <span>CALCULATORS</span> <FiChevronDown class="bi bi-chevron-down ms-2 mt-1" size={25} />
+                <span>CALCULATORS</span> <FiChevronDown className="bi bi-chevron-down ms-2 mt-1" size={25} />
               </Link>
-              <ul>
+              <ul className="dropdown-active">
                 <li>
                   <Link to={{ pathname: "/armorization" }}>PAYMENT AMORTIZATION</Link>
                 </li>
@@ -119,13 +123,10 @@ export default function HeaderNavbar() {
             <li>
               <Link to={{ pathname: "/login" }}>LOGIN</Link>
             </li>
-            {/* <li>
-              <a class="getstarted scrollto" href="#about">
-                Get Started
-              </a>
-            </li> */}
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+          <i className="bi bi-list mobile-nav-toggle">
+            {show ? <MdClose onClick={() => setShow(!show)} /> : <BsList onClick={() => setShow(!show)} />}
+          </i>
         </nav>
       </div>
     </header>

@@ -67,7 +67,7 @@ export default function homeLoanBasics() {
               <img src={require("../../Image/officer.jpg")} className="w-100" />
             </Col>
             <Col sm={12} md={7} lg={7}>
-              <ol>
+              <ol className="mt-3">
                 <p>
                   1. Assist you in selecting the best loan to meet your personal situation and goals. (This single
                   decision can save you thousands of dollars throughout the years!)
