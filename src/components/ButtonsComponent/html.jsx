@@ -9,8 +9,23 @@ import {
   BiHelpCircle,
 } from "react-icons/bi";
 import { BsDribbble, BsHandThumbsUpFill } from "react-icons/bs";
+import vision from "../ButtonsComponent/vision.png";
+import mission from "../ButtonsComponent/mission.png";
+import integrity from "../ButtonsComponent/integrity.png";
+import quality from "../ButtonsComponent/quality.png";
+import dedication from "../ButtonsComponent/dedication.png";
+import appreciation from "../ButtonsComponent/appreciation.png";
+import efficiency from "../ButtonsComponent/efficiencey.png";
+import compassionate from "../ButtonsComponent/compassionate.png";
 import { FiChevronDown, FiChevronUp, FiFileText } from "react-icons/fi";
-import { Button, Col, Modal, ProgressBar, Row } from "react-bootstrap";
+import {
+  Button,
+  Carousel,
+  Col,
+  Modal,
+  ProgressBar,
+  Row,
+} from "react-bootstrap";
 import {
   FaFacebookF,
   FaLinkedin,
@@ -21,6 +36,7 @@ import {
   FaFan,
   FaSlideshare,
 } from "react-icons/fa";
+
 import { AiFillInstagram } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineMarkEmailUnread, MdLocationOn } from "react-icons/md";
@@ -48,7 +64,10 @@ function Html() {
                   Vijay today and become a believer.
                 </h2>
                 <div className="d-flex justify-content-center justify-content-lg-start mb-3">
-                  <a href="/#/forms/step-1" className="btn-get-started scrollto">
+                  <a
+                    href="/#/forms/step-1"
+                    className="btn-get-started scrollto"
+                  >
                     Get Started
                   </a>
                   <a
@@ -163,6 +182,7 @@ function Html() {
                     </li> */}
                   </ul>
                 </div>
+
                 <div className="col-lg-6 pt-4 pt-lg-0">
                   <h5>
                     We take care of all details, from application to closing.
@@ -177,7 +197,11 @@ function Html() {
                   {/* <a href="/#/step-1" className="btn-learn-more">
                     Apply Now
                   </a> */}
-                  <Link to={{ pathname: "/forms/step-1" }} className="btn-learn-more" state={{ value: true }}>
+                  <Link
+                    to={{ pathname: "/forms/step-1" }}
+                    className="btn-learn-more"
+                    state={{ value: true }}
+                  >
                     Apply Now
                   </Link>
                 </div>
@@ -186,6 +210,65 @@ function Html() {
           </section>
 
           <section id="why-us" className="why-us section-bg">
+            <Carousel variant="dark">
+              <Carousel.Item>
+                <img
+                  src={vision}
+                  className="w-100"
+                  style={{ paddingLeft: "13%", paddingRight: "13%", height: "400px" }}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={mission}
+                  className="w-100"
+                  style={{ paddingLeft: "13%", paddingRight: "13%", height: "400px" }}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={integrity}
+                  className="w-100"
+                  style={{ paddingLeft: "13%", paddingRight: "13%", height: "400px" }}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={compassionate}
+                  className="w-100"
+                  style={{ paddingLeft: "13%", paddingRight: "13%", height: "400px" }}
+                />
+
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={quality}
+                  className="w-100"
+                  style={{ paddingLeft: "13%", paddingRight: "13%", height: "400px" }}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={dedication}
+                  className="w-100"
+                  style={{ paddingLeft: "13%", paddingRight: "13%", height: "400px" }}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={appreciation}
+                  className="w-100"
+                  style={{ paddingLeft: "13%", paddingRight: "13%", height: "400px" }}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={efficiency}
+                  className="w-100"
+                  style={{ paddingLeft: "13%", paddingRight: "13%", height: "400px" }}
+                />
+              </Carousel.Item>
+            </Carousel>
             <div className="container-fluid" data-aos="fade-up">
               <div className="row">
                 <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
@@ -493,7 +576,11 @@ function Html() {
           <section id="pricing" className="pricing">
             <div className="container" data-aos="fade-up">
               <div className="section-title">
-                <h2> AVIAR Financial Services’ core philosophy of “customers for Life”</h2>
+                <h2>
+                  {" "}
+                  AVIAR Financial Services’ core philosophy of “customers for
+                  Life”
+                </h2>
                 <p>
                   A strong and genuine belief in the “customers for life”
                   principal of doing business is what fuels this company.
@@ -515,11 +602,14 @@ function Html() {
                   We Listen… then find the best loan product for you!
                 </h5>
                 <p>
-                  Our goal in serving our customers is letting them tell us what they wish to accomplish in the best
-                  possible scenario. Then we work hard to make that scenario a reality. We are proud of our commitment
-                  to get the job done right the first time. In times of uncertainty you want a mortgage company that
-                  will fight for your best interest. At AVIAR Financial Services, we are committed to doing what’s best
-                  for our customers. Let us prove it to you!
+                  Our goal in serving our customers is letting them tell us what
+                  they wish to accomplish in the best possible scenario. Then we
+                  work hard to make that scenario a reality. We are proud of our
+                  commitment to get the job done right the first time. In times
+                  of uncertainty you want a mortgage company that will fight for
+                  your best interest. At AVIAR Financial Services, we are
+                  committed to doing what’s best for our customers. Let us prove
+                  it to you!
                 </p>
               </div>
               <Col className="d-flex justify-content-center mt-4">
@@ -900,13 +990,19 @@ function Html() {
                       data-bs-parent=".faq-list"
                     >
                       <p>
-                        This is where AVIAR Financial Services can begin saving you money. You will give us information
-                        on your employment, assets, and your residence history. You'll provide information on your
-                        employment, asset, and residence history. We will get your credit report and score with your
-                        permission. After we have reviewed all this info we give you a letter of pre-qualification. Your
-                        REALTOR® should use the pre-qual (as they may call it) in order to make the best offer on the
-                        home you choose. The pre-qual letter gives you buying clout! While you're picking out the home
-                        that's right for you, we're busy researching the loan program that's right for your situation.
+                        This is where AVIAR Financial Services can begin saving
+                        you money. You will give us information on your
+                        employment, assets, and your residence history. You'll
+                        provide information on your employment, asset, and
+                        residence history. We will get your credit report and
+                        score with your permission. After we have reviewed all
+                        this info we give you a letter of pre-qualification.
+                        Your REALTOR® should use the pre-qual (as they may call
+                        it) in order to make the best offer on the home you
+                        choose. The pre-qual letter gives you buying clout!
+                        While you're picking out the home that's right for you,
+                        we're busy researching the loan program that's right for
+                        your situation.
                       </p>
                     </div>
                   </li>
@@ -1136,10 +1232,12 @@ function Html() {
               Low rates and fees through knowledge and technology
             </h4>
             <p>
-              We use the most advanced technology available to close loans quickly, and at low cost. AVIAR Financial
-              Services combines the use of the internet along with advanced processing software and automated
-              underwriting systems to find the best loan program for our customers. We’ve essentially taken the mystery
-              out of approving and closing a home loan.
+              We use the most advanced technology available to close loans
+              quickly, and at low cost. AVIAR Financial Services combines the
+              use of the internet along with advanced processing software and
+              automated underwriting systems to find the best loan program for
+              our customers. We’ve essentially taken the mystery out of
+              approving and closing a home loan.
             </p>
           </div>
           <div>
@@ -1147,10 +1245,11 @@ function Html() {
               Not just for those with perfect credit
             </h4>
             <p>
-              AVIAR Financial Services is dedicated in the pursuit of offering competitive rates and terms for our “A”
-              credit customers. We are also just as driven to provide customers who may have had credit problems in the
-              past with the opportunity to obtain a mortgage. Just ask about our low down payment purchase and FHA
-              programs.
+              AVIAR Financial Services is dedicated in the pursuit of offering
+              competitive rates and terms for our “A” credit customers. We are
+              also just as driven to provide customers who may have had credit
+              problems in the past with the opportunity to obtain a mortgage.
+              Just ask about our low down payment purchase and FHA programs.
             </p>
           </div>
           <div>
@@ -1158,11 +1257,13 @@ function Html() {
               We Listen… then find the best loan product for you!
             </h4>
             <p>
-              Our goal in serving our customers is letting them tell us what they wish to accomplish in the best
-              possible scenario. Then we work hard to make that scenario a reality. We are proud of our commitment to
-              get the job done right the first time. In times of uncertainty you want a mortgage company that will fight
-              for your best interest. At AVIAR Financial Services, we are committed to doing what’s best for our
-              customers. Let us prove it to you!
+              Our goal in serving our customers is letting them tell us what
+              they wish to accomplish in the best possible scenario. Then we
+              work hard to make that scenario a reality. We are proud of our
+              commitment to get the job done right the first time. In times of
+              uncertainty you want a mortgage company that will fight for your
+              best interest. At AVIAR Financial Services, we are committed to
+              doing what’s best for our customers. Let us prove it to you!
             </p>
           </div>
         </Modal.Body>

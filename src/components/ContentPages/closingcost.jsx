@@ -18,18 +18,14 @@ function Closingcost() {
               }}
             >
               <div className="overlay-effect ">
-                {" "}
                 <h2 className="name">Closing Costs</h2>
               </div>
             </div>
-            <h4 className="heading mt-5 mb-5 ms-4" style={{ color: "rgb(0 155 223)" }}>
-              Don't Forget Closing Costs!
-            </h4>
+            <h4 className="heading mt-5 mb-5  text-center headline">Don't Forget Closing Costs!</h4>
             <Row>
-              <Col md={6}>
-                <div className="d-flex justify-content-center">
-                  {" "}
-                  <img src={images} className="image" />
+              <Col md={6} className="d-flex justify-content-center align-items-center">
+                <div className="w-100">
+                  <img src={images} className="image w-100" />
                 </div>
               </Col>
 
@@ -43,7 +39,7 @@ function Closingcost() {
                   USA Mortgage, we are highly experienced in mortgage lending, so we can provide you with a
                   comprehensive report on mortgage-related closing costs in your "Loan Estimate".
                 </p>
-                <h4 style={{ color: "rgb(0 155 223)" }} className="head">
+                <h4 className="head headline">
                   The Loan Estimate (Also known as the LE)
                 </h4>
                 <p className="para">
@@ -63,7 +59,6 @@ function Closingcost() {
 
             <div className="homepage-button mt-5 mb-5">
               <Button className="px-4 py-2 homepage-btn" onClick={() => navigate("/forms/step-1")}>
-                {" "}
                 Apply Now
               </Button>
             </div>
