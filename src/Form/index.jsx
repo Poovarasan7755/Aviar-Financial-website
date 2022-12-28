@@ -3,7 +3,6 @@ import { Col, Row, Container } from "react-bootstrap";
 import StepOne from "./LoanDetails/StepOne";
 import StepTwo from "./LoanDetails/StepTwo";
 import StepThree from "./Personal Information/StepThree";
-
 function Index() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState();
@@ -23,8 +22,6 @@ function Index() {
       [input]: value,
     }));
   };
-
-  
 
   switch (step) {
     // case 1 to show stepOne form and passing nextStep, prevStep, and handleInputData as handleFormData method as prop and also formData as value to the fprm

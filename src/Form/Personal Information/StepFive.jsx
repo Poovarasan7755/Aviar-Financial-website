@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Button, Form, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Select from "react-select";
-import Sidebar from "../../container/Sidebar";
 import { states } from "../state";
 import { values } from "../UnitType";
 
@@ -17,10 +16,7 @@ const option = [
 function StepFive() {
   const navigate = useNavigate();
   const [value, setValue] = useState("");
-  const [previous, setPrevious] = useState(true);
   const [borrower, setBorrower] = useState(false);
-  const [address, setAddress] = useState(false);
-  const [previousAddress, setPreviousAddress] = useState(false);
   const [formValues, setFormValues] = useState([
     { address: "", adress: "", city: "", zipcode: "", year: "", month: "" },
   ]);

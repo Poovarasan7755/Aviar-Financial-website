@@ -1,10 +1,8 @@
 import React from "react";
-import { Container, Row, Button } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-
 function Downpayment() {
   const navigate = useNavigate();
-
   return (
     <div>
       <div>
@@ -21,7 +19,7 @@ function Downpayment() {
           </div>
         </Container>
         <Container style={{ width: "90%" }}>
-          <h4 className="heading1 headline">Putting Together Your Down Payment</h4>
+          <h4 className="heading1 headline mt-5">Putting Together Your Down Payment</h4>
           <p className="para">
             Lots of borrowers can easily qualify for several different kinds of mortgages, but they don't have a lot of
             money to put up a down payment. Here are a few ideas:

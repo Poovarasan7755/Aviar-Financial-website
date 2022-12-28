@@ -80,3 +80,32 @@
     margin-top: 15px;
   }
 }
+.card-img-home {
+  height: 380px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 300px;
+  }
+}
+.homepage-mission {
+  padding: 0px 90px;
+  @media (max-width: 1024px) {
+    padding: 0px 30px;
+  }
+  @media (max-width: 768px) {
+    padding: 0px 50px;
+  }
+}
+.vission-card-home {
+  background-color: #1977cc;
+  color: aliceblue;
+}
+.vission-card-home div h3 a {
+  color: aliceblue !important;
+}
+.core-value-h4-color {
+  color: #0a95c2;
+}
+.btn-learn-more-homepage:hover {
+  color: aliceblue;
+  background-color: #179fde;
+}

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Container, Form, Button, Row, Col, Dropdown } from "react-bootstrap";
 import { useNavigate, useLocation } from "react-router-dom";
 import Select from "react-select";
-import Sidebar from "../../container/Sidebar";
-
 const Option = [
   {
     value: "Single Family Resitence",

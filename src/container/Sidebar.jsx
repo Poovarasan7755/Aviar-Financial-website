@@ -4,7 +4,7 @@ import { BsCardChecklist, BsPersonLinesFill } from "react-icons/bs";
 import { CgShoppingBag } from "react-icons/cg";
 import { FaDollyFlatbed } from "react-icons/fa";
 import { MdOutlineSpeakerNotes } from "react-icons/md";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../css/Sidebar.scss";
 
 export default function Sidebar(props) {

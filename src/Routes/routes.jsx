@@ -18,7 +18,6 @@ import {
   Earlypayoff,
   Employement,
   Ficocredit,
-  Footer,
   Gettingqualified,
   Homepage,
   Html,
@@ -47,7 +46,6 @@ import {
   Username,
   HomeLoanBasics,
 } from "../Pages";
-import Foote from "../container/footer";
 import { useAppContext } from "../Hooks/AppContext";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import FormsLayout from "../layouts/FormsLayout";
@@ -71,7 +69,7 @@ export default function Routers(props) {
         <Suspense fallback={fallbackLoader}>
           <HeaderNavbar />
 
-          <div style={{ marginTop: "105px" }}>
+          <div style={{ marginTop: "80px" }}>
             <Routes>
               <Route path="" exact element={<DefaultLayout />}>
                 <Route path="/" element={<Html />} />

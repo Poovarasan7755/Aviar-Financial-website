@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../css/css/style.scss";
 import logo from "./logo.png";
 import { BsArrowLeftShort, BsList } from "react-icons/bs";
-import { FiChevronDown, FiChevronRight } from "react-icons/fi";
+import { FiChevronDown} from "react-icons/fi";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import {  Nav, Navbar } from "react-bootstrap";
 
 export default function HeaderNavbar() {
   const [show, setShow] = useState(false);

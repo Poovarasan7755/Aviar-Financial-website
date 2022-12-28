@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../../container/Sidebar";
 
 export default function Declarationpage() {
   const navigate = useNavigate();

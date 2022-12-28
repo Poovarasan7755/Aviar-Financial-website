@@ -60,18 +60,6 @@
   // background-color: rgba(0, 86, 184, 0.75);
   overflow: hidden;
 }
-.overlay-effects {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  background-color: #3d4d6a80;
-  overflow: hidden;
-}
 .tech-services {
   display: flex;
   justify-content: end;
@@ -202,11 +190,14 @@
   max-height: 51px;
 }
 .homepage-btn {
-  background-color: #46c6ce !important ;
-  border-color: #46c6ce !important;
+  background-color: #0e6e9de8 !important ;
+  border-color: #0e6e9de8 !important;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .homepage-btn:hover {
-  background-color: #46c6ce !important;
+  background-color: #0e6e9de8 !important;
   transform: scale(1.05);
 }
 .index-page-image {

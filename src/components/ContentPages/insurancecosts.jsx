@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 function Insurancecosts() {
   return (
@@ -12,7 +12,6 @@ function Insurancecosts() {
           }}
         >
           <div className="overlay-effect ">
-            {" "}
             <h3 style={{ color: "whitesmoke" }} className="name">
               Homeowners Insurance
             </h3>

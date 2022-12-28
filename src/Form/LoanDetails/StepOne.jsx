@@ -4,8 +4,6 @@ import { Container, Form, FormGroup, Col, Button, Row } from "react-bootstrap";
 import "../../css/Form.scss";
 import { useLocation, useNavigate } from "react-router-dom";
 import Select from "react-select";
-import Sidebar from "../../container/Sidebar";
-
 const Option = [
   {
     value: "1",

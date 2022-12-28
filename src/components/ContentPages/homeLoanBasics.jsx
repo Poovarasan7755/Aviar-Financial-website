@@ -3,7 +3,6 @@ import HomeLoan from "../../Image/homeloan.jpg";
 import "../../css/Homepage.scss";
 import RealEstate from "../../Image/agent.png";
 import { Col, Container, Row } from "react-bootstrap";
-
 export default function homeLoanBasics() {
   return (
     <>
@@ -18,7 +17,7 @@ export default function homeLoanBasics() {
           // backgroundColor: "rgba(0, 86, 184, 0.75)",
         }}
       >
-        <div className="overlay-effects">
+        <div className="overlay-effect">
           <h2 className="name ms-4 ">Home Purchase Loan</h2>
         </div>
       </div>

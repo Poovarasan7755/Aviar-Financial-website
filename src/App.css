@@ -28,7 +28,7 @@
 .back-btn-color:hover {
   background-color: gray !important;
   color: white !important;
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 @media only Screen and (min-width: 768px) {
   .button-Style {
@@ -39,22 +39,31 @@
 .save-button {
   display: flex;
   justify-content: flex-end;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .save-btn-color {
-  background-color: #03c04a !important;
-  border-color: lightgreen !important;
+  background-color: #dfab2d !important;
+  border-color: #dfab2d !important;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .save-btn-color:hover {
-  background-color: green !important;
-  transform: scale(1.1);
+  background-color: #dfab2d !important;
+  transform: scale(1.02);
 }
 .next-btn-color {
   background-color: #32527b !important;
   border-color: #32527b !important;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .next-btn-color:hover {
-  background-color: #113f7a !important;
-  transform: scale(1.1);
+  background-color: #204a7e !important;
+  transform: scale(1.02);
 }
 @media only Screen and (max-width: 362px) {
   .next-btn-color {
@@ -80,3 +89,53 @@
 .headline {
   color: #4e6b9d;
 }
+.mission {
+  /* Created with https://www.css-gradient.com */
+  background: #23ec55;
+  background: -webkit-radial-gradient(top right, #23ec55, #2d51c1);
+  background: -moz-radial-gradient(top right, #23ec55, #2d51c1);
+  background: radial-gradient(to bottom left, #23ec55, #2d51c1);
+}
+.card-border {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background-color: #4e6b9d;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+.content {
+  padding: 6% !important;
+}
+.mission-font {
+  font-size: 16px;
+}
+.contents {
+  padding: 6% 15% 27% 15% !important;
+}
+.card-borders {
+  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+  background-color: #4e6b9d;
+  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+  color: #fff;
+}
+.carousel-control-prev {
+  left: -56px !important;
+}
+.carousel-control-next {
+  right: -54px !important;
+}
+.quality-text {
+  font-size: 14px;
+  padding-bottom: 2% !important;
+}
+.dedictaion-text {
+  padding-bottom: 4% !important;
+  font-size: 14px;
+}
+.contentss {
+  padding: 6% 15% 18% 15% !important;
+}
+.integrity-size {
+  font-size: 16px;
+  padding-bottom: 7%;
+}
+

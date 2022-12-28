@@ -3,7 +3,6 @@ import { Container, Button, Row, Col, Form } from "react-bootstrap";
 import "../../css/Form.scss";
 import Select from "react-select";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../../container/Sidebar";
 
 const ownership = [
   { label: "I have ownership share of less than 25%.", value: "I have ownership share of less than 25%." },

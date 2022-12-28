@@ -125,7 +125,8 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  // background: rgba(40, 58, 90, 0.9);
+  background: #ffffff;
 }
 
 #header .logo {
@@ -176,9 +177,10 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
-  color: #fff;
+  color: #29a5df;
   white-space: nowrap;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .navbar a i,
@@ -402,15 +404,35 @@ h6 {
 #hero .container {
   padding-top: 72px;
 }
-
+.cores-values {
+  margin-left: 21%;
+}
+.Compassionate {
+  margin-left: -12%;
+}
+.compassionate-values-contents {
+  padding: 0 39% 0 16% !important;
+}
+.values-name-qty {
+  margin-left: -1%;
+}
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
 }
-
+.core-value-head {
+  font-size: 40px;
+}
+.values-name {
+  margin-left: -5%;
+}
+.values-contents {
+  margin: 0px 0 0 -48%;
+  padding: 0 52% 0 21% !important;
+}
 #hero h2 {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
@@ -1906,13 +1928,13 @@ section {
   background-size: cover;
 }
 .getmorebutton {
-  background-color: #37405c;
+  background-color: #47b2e4;
   color: white;
   border-radius: 5px;
-  border-color: #757d95;
+  border-color: #47b2e4;
 }
 .getmorebutton:hover {
-  background-color: #2d395f;
+  background-color: #0f9cde;
   color: whitesmoke;
 }
 .loan-footer {

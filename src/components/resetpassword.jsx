@@ -2,16 +2,13 @@ import React from "react";
 import { useState } from "react";
 import { Container, Form, Button, InputGroup, FormLabel } from "react-bootstrap";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-
 import { ErrorMessage, Formik } from "formik";
 import * as Yup from "yup";
 function Resetpassword() {
   const [passwordShown, setPasswordShown] = useState(false);
-
-  const togglePasswordVisiblity = () => {
-    setPasswordShown(passwordShown ? false : true);
-  };
-
+  // const togglePasswordVisiblity = () => {
+  //   setPasswordShown(passwordShown ? false : true);
+  // };
   const loginSchema = Yup.object().shape({
     password: Yup.string().required("required"),
     confirm_password: Yup.string().required("required"),
@@ -32,7 +29,7 @@ function Resetpassword() {
           onSubmit={(values) => submitForm(values)}
         >
           {(formik) => {
-            const { handleChange, handleSubmit, setFieldValue, isValid, handleBlur } = formik;
+            const { handleChange, handleSubmit, isValid, handleBlur } = formik;
             return (
               <Container>
                 <Form onSubmit={handleSubmit}>

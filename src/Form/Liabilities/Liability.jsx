@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Button, Row, Col, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Select from "react-select";
-import Sidebar from "../../container/Sidebar";
 
 const Expense = [
   { label: "Alimony", value: "1" },
@@ -13,7 +12,6 @@ const Expense = [
 ];
 
 function Liabilities() {
-  const [ability, setAbility] = useState(false);
   const navigate = useNavigate();
   const [change, setChange] = useState();
   const [formValues, setFormValues] = useState([

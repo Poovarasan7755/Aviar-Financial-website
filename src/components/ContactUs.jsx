@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Container, Button } from "react-bootstrap";
 import "../css/Homepage.scss";
-
 export default class ContactUs extends Component {
   render() {
     return (

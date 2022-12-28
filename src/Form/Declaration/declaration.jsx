@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import Select from "react-select";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../../container/Sidebar";
 
 const Option = [
   { label: "Yes", value: "1" },

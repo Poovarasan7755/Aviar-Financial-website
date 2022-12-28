@@ -1,10 +1,8 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-
 function Fico() {
   const navigate = useNavigate();
-
   return (
     <div>
       <Container fluid>

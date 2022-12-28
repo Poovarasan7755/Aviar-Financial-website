@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "../css/Homepage.scss";
-
 function privacypolicy() {
   return (
     <div>

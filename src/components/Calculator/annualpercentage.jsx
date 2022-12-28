@@ -3,7 +3,6 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Select from "react-select";
 import { ErrorMessage, Formik } from "formik";
 import * as Yup from "yup";
-import Calculator from "./calculator";
 import Card from "react-bootstrap/Card";
 import "../../css/Form.scss";
 // import Footer from "../../comman/footer";
@@ -32,13 +31,13 @@ function Armorization() {
   const [applicationRange, setApplicationRange] = useState(0);
   const [reviewRange, setReviewRange] = useState(0);
   const [otherRange, setOtherRange] = useState(0);
-  const loginPageStyle = {
-    margin: "32px",
-    maxWidth: "530px",
-    background: "#fff",
-    padding: "30px",
-    borderRadius: "10px",
-  };
+  // const loginPageStyle = {
+  //   margin: "32px",
+  //   maxWidth: "530px",
+  //   background: "#fff",
+  //   padding: "30px",
+  //   borderRadius: "10px",
+  // };
   const validationSchema = Yup.object().shape({
     // volume: Yup.string().required("required"),
     // interestRate: Yup.string().required("required"),
@@ -77,7 +76,7 @@ function Armorization() {
         <Container className="mt-4">
           <Row>
             <Col sm={8} md={4} lg={4} xs={12}>
-              <h5 className="font-weight-bold">Annual Percentage Rate (APR) Calculator</h5>
+              <h5 className="font-weight-bold headline">Annual Percentage Rate (APR) Calculator</h5>
               <p>Calculate the annual percentage rate for a loan.</p>
               <Card style={{ backgroundColor: "#f7f7f7", padding: "10px" }} className="p-md-3 p-sm-2 p-lg-3 p-xs-2">
                 <Formik
@@ -114,6 +113,7 @@ function Armorization() {
                             }}
                             onBlur={handleBlur}
                           />
+                          <span>$</span>
                           <input
                             className="w-100"
                             type="range"
@@ -663,7 +663,7 @@ function Armorization() {
                               <ErrorMessage className="error text-danger" component="span" name="totalClosingCosts" />
                             </Form.Group>
                           )}
-                          <Button type="submit" className="button_1" disabled={!isValid}>
+                          <Button type="submit" className="button_1 mt-2" disabled={!isValid}>
                             Calculate
                           </Button>
                         </Form.Group>
@@ -683,14 +683,14 @@ function Armorization() {
             <Col className="results-padding">
               <Row>
                 <Col className=" d-flex justify-content-between">
-                  <b>Results</b>
+                  <b className="headline">Results</b>
                   <text>Print</text>
                 </Col>
                 <hr className="my-2" />
                 <h6 className="calculator-heading">Initial Monthly Payment</h6>
                 <p>${finalValue?.toFixed(2)}</p>
                 <hr className="my-2" />
-                <h6 className="calculator-heading">APR</h6>
+                <h6 className="calculator-heading headline">APR</h6>
                 <p>0 %</p>
               </Row>
             </Col>

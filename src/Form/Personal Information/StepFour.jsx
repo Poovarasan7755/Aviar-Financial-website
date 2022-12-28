@@ -4,8 +4,6 @@ import Select from "react-select";
 import { useNavigate } from "react-router-dom";
 import { Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import Sidebar from "../../container/Sidebar";
-
 const initialValues = { email: "", firstName: "", lastName: "", date: "", securitynumber: "" };
 
 const SignInSchema = Yup.object().shape({

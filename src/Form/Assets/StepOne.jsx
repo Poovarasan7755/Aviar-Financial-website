@@ -3,11 +3,8 @@ import { Container, Button, Form, Col, Row } from "react-bootstrap";
 import "../../css/Form.scss";
 import Select from "react-select";
 import { useNavigate, useLocation } from "react-router-dom";
-
 import { values } from "../UnitType.js";
 import { states } from "../state.js";
-import Sidebar from "../../container/Sidebar";
-
 const Home = [
   {
     value: "Primary Home",

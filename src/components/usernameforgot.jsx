@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form, Button, Row, Col, FormGroup, FormLabel } from "react-bootstrap";
+import { Container, Form, Button, FormGroup, FormLabel } from "react-bootstrap";
 import { ErrorMessage, Formik } from "formik";
 import * as Yup from "yup";
 import "../css/login.scss";

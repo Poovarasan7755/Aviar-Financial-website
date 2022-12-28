@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Row, Button } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-
 function Qualified() {
   const navigate = useNavigate();
   return (
@@ -15,13 +14,12 @@ function Qualified() {
             }}
           >
             <div className="overlay-effect">
-              {" "}
               <h2 className="name">Get Qualified</h2>
             </div>
           </div>
         </Container>
         <Container fluid style={{ width: "90%" }}>
-          <h4 className="text-center mt-5 mb-2 headline">Why Pre-Qualification is Important</h4>
+          <h4 className="mt-5 mb-2 headline">Why Pre-Qualification is Important</h4>
           <p className="para">
             It's important to bring in your mortgage professional early — even before you've started researching
             neighborhoods. What for? Perhaps it's difficult to understand the way we could help even before you start to

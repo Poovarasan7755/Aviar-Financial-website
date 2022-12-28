@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import { Container, Form, Button, InputGroup, FormControl } from "react-bootstrap";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-
 import { Link } from "react-router-dom";
-
 import { ErrorMessage, Formik } from "formik";
 import * as Yup from "yup";
 import "../css/login.scss";
-
 function Login() {
   const [passwordShown, setPasswordShown] = useState(false);
-  const togglePasswordVisiblity = () => {
-    setPasswordShown(passwordShown ? false : true);
-  };
+  // const togglePasswordVisiblity = () => {
+  //   setPasswordShown(passwordShown ? false : true);
+  // };
 
   const loginSchema = Yup.object().shape({
     name: Yup.string().required("required"),

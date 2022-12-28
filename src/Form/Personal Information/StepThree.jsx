@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../../container/Sidebar";
-
 function StepThree() {
   const navigate = useNavigate();
   const [values, setValues] = useState(false);
-
   return (
     <div className="site-maincontent home-content open">
       <div style={{ minHeight: "calc(100vh - 200px)" }}>
